@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "roofedv:scrap_shards"
+    }
+  },
+  "result": {
+    "item": "roofedv:scrap_plate_block"
+  }
+}

@@ -1,6 +1,7 @@
 package net.jonxl04.roofedv.item;
 
 import net.jonxl04.roofedv.RoofedVMod;
+import net.jonxl04.roofedv.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SCRAP_INGOT.get());
                         pOutput.accept(ModItems.SCRAP_SHARDS.get());
                         pOutput.accept(ModItems.SCRAP_SWORD.get());
+                        pOutput.accept(ModItems.MERCHITE.get());
+
+                        pOutput.accept(ModBlocks.SCRAP_BLOCK.get());
+                        pOutput.accept(ModBlocks.SCRAP_PLATE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SCRAP_ORE.get());
+                        pOutput.accept(ModBlocks.MERCHITE_ORE.get());
                     })
                     .build());
 

@@ -1,6 +1,7 @@
 package net.jonxl04.roofedv;
 
 import com.mojang.logging.LogUtils;
+import net.jonxl04.roofedv.block.ModBlocks;
 import net.jonxl04.roofedv.item.ModCreativeModeTabs;
 import net.jonxl04.roofedv.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +34,7 @@ public class RoofedVMod
         ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -48,6 +50,7 @@ public class RoofedVMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+
         }
     }
 

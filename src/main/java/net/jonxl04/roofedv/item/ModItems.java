@@ -20,6 +20,10 @@ public class ModItems {
     public static final RegistryObject<Item> SCRAP_SWORD = ITEMS.register("scrap_sword",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> MERCHITE = ITEMS.register("merchite",
+            () -> new Item(new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

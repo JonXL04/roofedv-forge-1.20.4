@@ -2,6 +2,12 @@
   "item.roofedv.scrap_ingot": "Scrap Ingot",
   "item.roofedv.scrap_shards": "Scrap Shards",
   "item.roofedv.scrap_sword": "Scrap Sword",
+  "item.roofedv.merchite": "Merchite",
+
+  "block.roofedv.scrap_block": "Block of Scrap",
+  "block.roofedv.scrap_plate_block": "Block of Raw Scrap",
+  "block.roofedv.scrap_ore": "Fossilized Scrap Ore",
+  "block.roofedv.merchite_ore": "Merchite Ore",
 
   "creativetab.roofedv_tab": "Roofed Void Items"
 }
