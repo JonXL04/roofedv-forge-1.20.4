@@ -36,6 +36,19 @@ public class ModBlocks {
     public static final RegistryObject<Block> MERCHITE_ORE = registerBlock("merchite_ore",
             () -> new DropExperienceBlock(UniformInt.of(1,2), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COAL_ORE)));
 
+    public static final RegistryObject<Block> SCRAP_SAND = registerBlock("scrap_sand",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
+
+    public static final RegistryObject<Block> SCRAP_SANDSTONE = registerBlock("scrap_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> SCRAP_CUT_SANDSTONE = registerBlock("scrap_cut_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> SCRAP_SMOOTH_SANDSTONE = registerBlock("scrap_smooth_sandstone",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

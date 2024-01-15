@@ -3,6 +3,9 @@
     "roofedv:scrap_block",
     "roofedv:scrap_plate_block",
     "roofedv:scrap_ore",
-    "roofedv:merchite_ore"
+    "roofedv:merchite_ore",
+    "roofedv:scrap_sandstone",
+    "roofedv:scrap_cut_sandstone",
+    "roofedv:scrap_smooth_sandstone"
   ]
 }

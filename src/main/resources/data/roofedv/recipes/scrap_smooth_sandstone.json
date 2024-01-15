@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "scrap_ingot",
+  "ingredient": {
+    "item": "roofedv:scrap_sandstone"
+  },
+  "result": "roofedv:scrap_smooth_sandstone"
+}

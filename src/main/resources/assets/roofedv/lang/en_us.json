@@ -8,6 +8,10 @@
   "block.roofedv.scrap_plate_block": "Block of Raw Scrap",
   "block.roofedv.scrap_ore": "Fossilized Scrap Ore",
   "block.roofedv.merchite_ore": "Merchite Ore",
+  "block.roofedv.scrap_sand": "Scrap Sand",
+  "block.roofedv.scrap_sandstone": "Scrap Sandstone",
+  "block.roofedv.scrap_cut_sandstone": "Cut Scrap Sandstone",
+  "block.roofedv.scrap_smooth_sandstone": "Smooth Scrap Sandstone",
 
   "creativetab.roofedv_tab": "Roofed Void Items"
 }

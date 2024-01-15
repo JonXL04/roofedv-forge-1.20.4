@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "roofedv:scrap_sandstone"
+    }
+  },
+  "result": {
+    "item": "roofedv:scrap_cut_sandstone"
+  }
+}

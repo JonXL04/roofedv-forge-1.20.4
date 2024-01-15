@@ -27,6 +27,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SCRAP_PLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.SCRAP_ORE.get());
                         pOutput.accept(ModBlocks.MERCHITE_ORE.get());
+                        pOutput.accept(ModBlocks.SCRAP_SAND.get());
+                        pOutput.accept(ModBlocks.SCRAP_SANDSTONE.get());
+                        pOutput.accept(ModBlocks.SCRAP_CUT_SANDSTONE.get());
+                        pOutput.accept(ModBlocks.SCRAP_SMOOTH_SANDSTONE.get());
                     })
                     .build());
 
