@@ -3,7 +3,6 @@
     "roofedv:scrap_block",
     "roofedv:scrap_plate_block",
     "roofedv:scrap_ore",
-    "roofedv:merchite_ore",
-    "roofedv:merchite_block"
+    "roofedv:scrap_sand"
   ]
 }

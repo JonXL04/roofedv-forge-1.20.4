@@ -22,10 +22,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SCRAP_SHARDS.get());
                         pOutput.accept(ModItems.SCRAP_SWORD.get());
                         pOutput.accept(ModItems.MERCHITE.get());
+                        pOutput.accept(ModItems.MERCHITE_SHARD.get());
 
                         pOutput.accept(ModBlocks.SCRAP_BLOCK.get());
                         pOutput.accept(ModBlocks.SCRAP_PLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.SCRAP_ORE.get());
+                        pOutput.accept(ModBlocks.MERCHITE_BLOCK.get());
                         pOutput.accept(ModBlocks.MERCHITE_ORE.get());
                         pOutput.accept(ModBlocks.SCRAP_SAND.get());
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE.get());

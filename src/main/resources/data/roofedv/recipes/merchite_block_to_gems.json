@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "roofedv:merchite_block"
+    }
+  ],
+  "result": {
+    "item": "roofedv:merchite",
+    "count": 9
+  }
+}

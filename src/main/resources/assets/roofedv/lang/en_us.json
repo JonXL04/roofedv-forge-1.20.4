@@ -3,6 +3,7 @@
   "item.roofedv.scrap_shards": "Scrap Shards",
   "item.roofedv.scrap_sword": "Scrap Sword",
   "item.roofedv.merchite": "Merchite",
+  "item.roofedv.merchite_shard": "Merchite Shard",
 
   "block.roofedv.scrap_block": "Block of Scrap",
   "block.roofedv.scrap_plate_block": "Block of Raw Scrap",
@@ -12,6 +13,7 @@
   "block.roofedv.scrap_sandstone": "Scrap Sandstone",
   "block.roofedv.scrap_cut_sandstone": "Cut Scrap Sandstone",
   "block.roofedv.scrap_smooth_sandstone": "Smooth Scrap Sandstone",
+  "block.roofedv.merchite_block": "Block of Merchite",
 
   "creativetab.roofedv_tab": "Roofed Void Items"
 }

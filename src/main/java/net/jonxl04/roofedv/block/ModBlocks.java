@@ -43,11 +43,13 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
 
     public static final RegistryObject<Block> SCRAP_CUT_SANDSTONE = registerBlock("scrap_cut_sandstone",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CUT_SANDSTONE)));
 
     public static final RegistryObject<Block> SCRAP_SMOOTH_SANDSTONE = registerBlock("scrap_smooth_sandstone",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));
 
+    public static final RegistryObject<Block> MERCHITE_BLOCK = registerBlock("merchite_block",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "roofedv:item/merchite"
+    "layer0": "roofedv:item/merchite_shard"
   }
 }

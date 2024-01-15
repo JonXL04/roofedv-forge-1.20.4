@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "roofedv:merchite"
+    }
+  },
+  "result": {
+    "item": "roofedv:merchite_block"
+  }
+}
