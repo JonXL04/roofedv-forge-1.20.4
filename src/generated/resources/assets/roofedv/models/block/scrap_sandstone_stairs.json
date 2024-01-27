@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "roofedv:block/scrap_sandstone",
+    "side": "roofedv:block/scrap_sandstone",
+    "top": "roofedv:block/scrap_sandstone"
+  }
+}

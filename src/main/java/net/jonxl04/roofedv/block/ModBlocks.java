@@ -5,13 +5,11 @@ import net.jonxl04.roofedv.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -40,6 +38,15 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SCRAP_SANDSTONE = registerBlock("scrap_sandstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+
+    public static final RegistryObject<Block> SCRAP_SANDSTONE_STAIRS = registerBlock("scrap_sandstone_stairs",
+            () -> new StairBlock(ModBlocks.SCRAP_SANDSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> SCRAP_SANDSTONE_SLAB = registerBlock("scrap_sandstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+    public static final RegistryObject<Block> SCRAP_SANDSTONE_WALL = registerBlock("scrap_sandstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
+
 
     public static final RegistryObject<Block> SCRAP_CUT_SANDSTONE = registerBlock("scrap_cut_sandstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.CUT_SANDSTONE)));

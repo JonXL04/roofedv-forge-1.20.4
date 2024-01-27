@@ -5,8 +5,11 @@ import net.jonxl04.roofedv.block.ModBlocks;
 import net.jonxl04.roofedv.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.Collections;
@@ -55,6 +58,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SCRAP_SHARDS.get(), 9)
                 .requires(ModBlocks.SCRAP_PLATE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SCRAP_PLATE_BLOCK.get()), has(ModBlocks.SCRAP_PLATE_BLOCK.get()))
+                .save(pRecipeOutput);
+
+        //Scrap Tools
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SCRAP_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" I ")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SCRAP_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SCRAP_SHOVEL.get())
+                .pattern(" S ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SCRAP_AXE.get())
+                .pattern("SS ")
+                .pattern("SI ")
+                .pattern(" I ")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SCRAP_HOE.get())
+                .pattern("SS ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
                 .save(pRecipeOutput);
 
         //Scrap sand

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "forge:rods/wooden"
+    },
+    "S": {
+      "item": "roofedv:scrap_ingot"
+    }
+  },
+  "pattern": [
+    "SS ",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "item": "roofedv:scrap_hoe"
+  }
+}

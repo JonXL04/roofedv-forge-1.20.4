@@ -6,6 +6,7 @@ import net.jonxl04.roofedv.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -49,7 +50,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
-        //this.tag(BlockTags.NEEDS_NETHERITE_TOOL);
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        this.tag(BlockTags.WALLS)
+                .add(ModBlocks.SCRAP_SANDSTONE.get()
+                );
 
         this.tag(ModTags.Blocks.METAL_SCRAPS)
                 .add(ModBlocks.SCRAP_BLOCK.get(),

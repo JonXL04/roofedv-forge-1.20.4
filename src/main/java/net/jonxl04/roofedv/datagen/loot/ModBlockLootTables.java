@@ -12,6 +12,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -27,9 +28,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SCRAP_SAND.get());
         this.dropSelf(ModBlocks.SCRAP_PLATE_BLOCK.get());
         this.dropSelf(ModBlocks.SCRAP_SANDSTONE.get());
+        this.dropSelf(ModBlocks.SCRAP_SANDSTONE_WALL.get());
+        this.dropSelf(ModBlocks.SCRAP_SANDSTONE_STAIRS.get());
         this.dropSelf(ModBlocks.SCRAP_CUT_SANDSTONE.get());
         this.dropSelf(ModBlocks.SCRAP_SMOOTH_SANDSTONE.get());
         this.dropSelf(ModBlocks.MERCHITE_BLOCK.get());
+
+        this.add(ModBlocks.SCRAP_SANDSTONE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SCRAP_SANDSTONE_SLAB.get()));
 
         this.add(ModBlocks.SCRAP_ORE.get(),
                 block -> createCustomOreDrops(ModBlocks.SCRAP_ORE.get(), ModItems.SCRAP_SHARDS.get(),1.0F,2.0F));

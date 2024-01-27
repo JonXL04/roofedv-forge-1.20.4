@@ -1,5 +1,13 @@
-// 1.20.4	2024-01-24T00:22:56.5339572	Item Models: roofedv
+// 1.20.4	2024-01-27T22:53:09.9534626	Item Models: roofedv
 3efc13af30b305ac933c9c7018571e6774a3d253 assets/roofedv/models/item/merchite.json
 4cc48c940167e8e07364bd56d53bddda0b3b92a2 assets/roofedv/models/item/merchite_shard.json
+7e2118065b375da3a481f40e7dafab552c15b48c assets/roofedv/models/item/scrap_axe.json
+7181776ce74961dd8829105a1be32c742ff289b3 assets/roofedv/models/item/scrap_hoe.json
 36d089f443f0d435bafeed3debf00a14d0578a04 assets/roofedv/models/item/scrap_ingot.json
+a3e0447fa47d77989f292c02e20a2bf580713b55 assets/roofedv/models/item/scrap_pickaxe.json
+1a487d3b5a1374e5a9747a6516884e32a0498d5e assets/roofedv/models/item/scrap_sandstone_slab.json
+3f920cca5aed7f4fe0a9a6d8610595b918d2760d assets/roofedv/models/item/scrap_sandstone_stairs.json
+4f8ccbb3c0b248c1e67701e6738519e35e0375f2 assets/roofedv/models/item/scrap_sandstone_wall.json
 95778deb18ba9ef04e0dbfc4ece4d4a98a5729ce assets/roofedv/models/item/scrap_shards.json
+63f153d23eb0e47edaa62e2f138fed16cd5aa913 assets/roofedv/models/item/scrap_shovel.json
+04d3c166debc8cd96dd26df0ae3c251f04118b84 assets/roofedv/models/item/scrap_sword.json

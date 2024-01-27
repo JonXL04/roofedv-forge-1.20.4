@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "roofedv:block/scrap_sandstone_slab"
+    },
+    "type=double": {
+      "model": "roofedv:block/scrap_sandstone"
+    },
+    "type=top": {
+      "model": "roofedv:block/scrap_sandstone_slab_top"
+    }
+  }
+}
