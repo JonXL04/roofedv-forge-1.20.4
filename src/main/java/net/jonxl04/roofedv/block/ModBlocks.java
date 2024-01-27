@@ -2,7 +2,6 @@ package net.jonxl04.roofedv.block;
 
 import net.jonxl04.roofedv.RoofedVMod;
 import net.jonxl04.roofedv.item.ModItems;
-import net.minecraft.client.gui.screens.achievement.StatsUpdateListener;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -24,10 +23,10 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, RoofedVMod.MOD_ID);
 
-    public static final RegistryObject<Block> SCRAP_BLOCK = registerBlock("scrap_ore",
+    public static final RegistryObject<Block> SCRAP_BLOCK = registerBlock("scrap_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(4.5F, 6.0F).sound(SoundType.COPPER).mapColor(MapColor.RAW_IRON)));
 
-    public static final RegistryObject<Block> SCRAP_PLATE_BLOCK = registerBlock("scrap_ore",
+    public static final RegistryObject<Block> SCRAP_PLATE_BLOCK = registerBlock("scrap_plate_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(4.5F, 6.0F).sound(SoundType.COPPER).mapColor(MapColor.RAW_IRON)));
 
     public static final RegistryObject<Block> SCRAP_ORE = registerBlock("scrap_ore",

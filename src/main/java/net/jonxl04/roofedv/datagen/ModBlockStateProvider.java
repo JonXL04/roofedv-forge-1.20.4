@@ -19,10 +19,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.SCRAP_BLOCK);
         blockWithItem(ModBlocks.SCRAP_PLATE_BLOCK);
         blockWithItem(ModBlocks.SCRAP_ORE);
-        blockWithItem(ModBlocks.SCRAP_SANDSTONE);
         blockWithItem(ModBlocks.SCRAP_SAND);
-        blockWithItem(ModBlocks.SCRAP_SMOOTH_SANDSTONE);
-        blockWithItem(ModBlocks.SCRAP_CUT_SANDSTONE);
+        //blockWithItem(ModBlocks.SCRAP_SANDSTONE);
+        //blockWithItem(ModBlocks.SCRAP_SMOOTH_SANDSTONE);
+        //blockWithItem(ModBlocks.SCRAP_CUT_SANDSTONE);
         blockWithItem(ModBlocks.MERCHITE_BLOCK);
         blockWithItem(ModBlocks.MERCHITE_ORE);
     }

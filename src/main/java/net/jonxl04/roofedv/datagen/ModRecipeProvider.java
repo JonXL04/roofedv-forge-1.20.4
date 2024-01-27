@@ -9,7 +9,9 @@ import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike>
@@ -56,7 +58,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pRecipeOutput);
 
         //Scrap sand
-        oreSmelting(pRecipeOutput, (List<ItemLike>) ModBlocks.SCRAP_SANDSTONE.get(), RecipeCategory.MISC, (ItemLike) ModBlocks.SCRAP_SMOOTH_SANDSTONE.get(), 0.7F, 200, "scrap_sandstone");
+        oreSmelting(pRecipeOutput, Collections.singletonList(ModBlocks.SCRAP_SANDSTONE.get()), RecipeCategory.MISC, (ItemLike) ModBlocks.SCRAP_SMOOTH_SANDSTONE.get(), 0.7F, 200, "scrap_sandstone");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SCRAP_SANDSTONE.get())
                 .pattern("SS")
@@ -73,6 +75,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pRecipeOutput);
 
         //Merchite
+        oreSmelting(pRecipeOutput, Collections.singletonList(ModBlocks.MERCHITE_ORE.get()), RecipeCategory.MISC, (ItemLike) ModItems.MERCHITE.get(), 0.7F, 200, "merchite");
+        oreBlasting(pRecipeOutput, Collections.singletonList(ModBlocks.MERCHITE_ORE.get()), RecipeCategory.MISC, (ItemLike) ModItems.MERCHITE.get(), 0.7F, 200, "merchite");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MERCHITE_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
@@ -80,18 +85,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S',ModItems.MERCHITE.get())
                 .unlockedBy(getHasName(ModItems.MERCHITE.get()), has(ModItems.MERCHITE.get()))
                 .save(pRecipeOutput);
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MERCHITE.get(), 9)
+        /*ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MERCHITE.get(), 9)
                 .requires(ModBlocks.MERCHITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.MERCHITE_BLOCK.get()), has(ModBlocks.MERCHITE_BLOCK.get()))
-                .save(pRecipeOutput);
+                .save(pRecipeOutput);*/
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MERCHITE.get())
+        /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MERCHITE.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
                 .define('S',ModItems.MERCHITE_SHARD.get())
                 .unlockedBy(getHasName(ModItems.MERCHITE_SHARD.get()), has(ModItems.MERCHITE_SHARD.get()))
-                .save(pRecipeOutput);
+                .save(pRecipeOutput);*/
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MERCHITE_SHARD.get(), 9)
                 .requires(ModItems.MERCHITE.get())
                 .unlockedBy(getHasName(ModItems.MERCHITE.get()), has(ModItems.MERCHITE.get()))
