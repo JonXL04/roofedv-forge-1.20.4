@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "roofedv:scrap_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "S S"
+  ],
+  "result": {
+    "item": "roofedv:scrap_leggings"
+  }
+}

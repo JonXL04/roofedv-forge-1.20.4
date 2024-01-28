@@ -60,8 +60,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SCRAP_PLATE_BLOCK.get()), has(ModBlocks.SCRAP_PLATE_BLOCK.get()))
                 .save(pRecipeOutput);
 
-        //Scrap Tools
-        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SCRAP_SWORD.get())
+        //Scrap Tools and Armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SCRAP_SWORD.get())
                 .pattern(" S ")
                 .pattern(" S ")
                 .pattern(" I ")
@@ -103,6 +103,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" I ")
                 .define('S',ModItems.SCRAP_INGOT.get())
                 .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SCRAP_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SCRAP_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SCRAP_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S',ModItems.SCRAP_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SCRAP_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S',ModItems.SCRAP_INGOT.get())
                 .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
                 .save(pRecipeOutput);
 

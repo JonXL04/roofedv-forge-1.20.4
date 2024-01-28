@@ -36,6 +36,15 @@ public class ModItems {
     public static final RegistryObject<Item> SCRAP_HOE = ITEMS.register("scrap_hoe",
             () -> new HoeItem(ModToolTiers.SCRAP, -2, -1.5f, new Item.Properties()));
 
+    public static final RegistryObject<Item> SCRAP_HELMET = ITEMS.register("scrap_helmet",
+            () -> new ArmorItem(ModArmorMaterials.SCRAP, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SCRAP_CHESTPLATE = ITEMS.register("scrap_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.SCRAP, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> SCRAP_LEGGINGS = ITEMS.register("scrap_leggings",
+            () -> new ArmorItem(ModArmorMaterials.SCRAP, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> SCRAP_BOOTS = ITEMS.register("scrap_boots",
+            () -> new ArmorItem(ModArmorMaterials.SCRAP, ArmorItem.Type.BOOTS, new Item.Properties()));
+
     public static final RegistryObject<Item> RAW_THERATILLO_MEAT = ITEMS.register("raw_theratillo_meat",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_THERATILLO_MEAT)));
 

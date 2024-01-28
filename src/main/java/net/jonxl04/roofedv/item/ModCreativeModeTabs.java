@@ -18,21 +18,9 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SCRAP_INGOT.get()))
                     .title(Component.translatable("creativetab.roofedv_tab"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModItems.SCRAP_INGOT.get());
-                        pOutput.accept(ModItems.SCRAP_SHARDS.get());
-                        pOutput.accept(ModItems.SCRAP_SWORD.get());
-                        pOutput.accept(ModItems.SCRAP_PICKAXE.get());
-                        pOutput.accept(ModItems.SCRAP_SHOVEL.get());
-                        pOutput.accept(ModItems.SCRAP_AXE.get());
-                        pOutput.accept(ModItems.SCRAP_HOE.get());
-                        pOutput.accept(ModItems.MERCHITE.get());
-                        pOutput.accept(ModItems.MERCHITE_SHARD.get());
-
-                        pOutput.accept(ModBlocks.SCRAP_BLOCK.get());
-                        pOutput.accept(ModBlocks.SCRAP_PLATE_BLOCK.get());
                         pOutput.accept(ModBlocks.SCRAP_ORE.get());
-                        pOutput.accept(ModBlocks.MERCHITE_BLOCK.get());
                         pOutput.accept(ModBlocks.MERCHITE_ORE.get());
+
                         pOutput.accept(ModBlocks.SCRAP_SAND.get());
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE.get());
                         pOutput.accept(ModBlocks.SCRAP_CUT_SANDSTONE.get());
@@ -40,6 +28,24 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE_STAIRS.get());
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE_SLAB.get());
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE_WALL.get());
+
+                        pOutput.accept(ModBlocks.SCRAP_BLOCK.get());
+                        pOutput.accept(ModBlocks.SCRAP_PLATE_BLOCK.get());
+                        pOutput.accept(ModItems.SCRAP_INGOT.get());
+                        pOutput.accept(ModItems.SCRAP_SHARDS.get());
+                        pOutput.accept(ModBlocks.MERCHITE_BLOCK.get());
+                        pOutput.accept(ModItems.MERCHITE.get());
+                        pOutput.accept(ModItems.MERCHITE_SHARD.get());
+
+                        pOutput.accept(ModItems.SCRAP_SWORD.get());
+                        pOutput.accept(ModItems.SCRAP_PICKAXE.get());
+                        pOutput.accept(ModItems.SCRAP_SHOVEL.get());
+                        pOutput.accept(ModItems.SCRAP_AXE.get());
+                        pOutput.accept(ModItems.SCRAP_HOE.get());
+                        pOutput.accept(ModItems.SCRAP_HELMET.get());
+                        pOutput.accept(ModItems.SCRAP_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SCRAP_LEGGINGS.get());
+                        pOutput.accept(ModItems.SCRAP_BOOTS.get());
                     })
                     .build());
 
