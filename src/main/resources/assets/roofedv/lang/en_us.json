@@ -13,6 +13,9 @@
   "item.roofedv.merchite": "Merchite",
   "item.roofedv.merchite_shard": "Merchite Shard",
 
+  "item.roofedv.spectator_spawn_egg": "Spectator Spawn Egg",
+
+
   "block.roofedv.scrap_block": "Block of Scrap",
   "block.roofedv.scrap_plate_block": "Block of Raw Scrap",
   "block.roofedv.scrap_ore": "Fossilized Scrap Ore",
@@ -26,5 +29,6 @@
   "block.roofedv.scrap_smooth_sandstone": "Smooth Scrap Sandstone",
   "block.roofedv.merchite_block": "Block of Merchite",
 
+  
   "creativetab.roofedv_tab": "Roofed Void Items"
 }

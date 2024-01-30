@@ -1,9 +1,11 @@
 package net.jonxl04.roofedv.item;
 
 import net.jonxl04.roofedv.RoofedVMod;
+import net.jonxl04.roofedv.entity.ModEntities;
 import net.jonxl04.roofedv.item.custom.FuelItem;
 import net.jonxl04.roofedv.item.custom.ModToolTiers;
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -45,10 +47,11 @@ public class ModItems {
     public static final RegistryObject<Item> SCRAP_BOOTS = ITEMS.register("scrap_boots",
             () -> new ArmorItem(ModArmorMaterials.SCRAP, ArmorItem.Type.BOOTS, new Item.Properties()));
 
-    public static final RegistryObject<Item> RAW_THERATILLO_MEAT = ITEMS.register("raw_theratillo_meat",
-            () -> new Item(new Item.Properties().food(ModFoods.RAW_THERATILLO_MEAT)));
+    /*public static final RegistryObject<Item> RAW_THERATILLO_MEAT = ITEMS.register("raw_theratillo_meat",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_THERATILLO_MEAT)));*/
 
-
+    public static final RegistryObject<Item> SPECTATOR_SPAWN_EGG = ITEMS.register("spectator_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.SPECTATOR, 0x5e5e5e, 0x57eeff, new Item.Properties()));
 
 
     public static void register(IEventBus eventBus) {

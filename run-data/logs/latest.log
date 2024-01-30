@@ -1,26 +1,30 @@
-[28ene2024 01:47:59.162] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 12, --assetsDir, C:\Users\JonXL\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, roofedv, --all, --output, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\generated\resources, --existing, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\main\resources]
-[28ene2024 01:47:59.164] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.7+7
-[28ene2024 01:47:59.166] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.7 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[28ene2024 01:47:59.282] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[28ene2024 01:47:59.391] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/JonXL/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
-[28ene2024 01:48:00.092] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[28ene2024 01:48:01.016] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\JonXL\.gradle\caches\forge_gradle\assets, --assetIndex, 12, --mod, roofedv, --all, --output, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\generated\resources, --existing, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\main\resources]
-[28ene2024 01:48:05.689] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 49.0.19, for MC 1.20.4 with MCP 20231207.112700
-[28ene2024 01:48:05.691] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v49.0.19 Initialized
-[28ene2024 01:48:06.078] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [roofedv]
-[28ene2024 01:48:06.138] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/JonXL/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4/forge-1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4-recomp.jar%2316!/assets/.mcassetsroot' uses unexpected schema
-[28ene2024 01:48:06.139] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/JonXL/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4/forge-1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4-recomp.jar%2316!/data/.mcassetsroot' uses unexpected schema
-[28ene2024 01:48:06.251] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[28ene2024 01:48:06.314] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 62 ms
-[28ene2024 01:48:06.314] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[28ene2024 01:48:06.347] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 32 ms
-[28ene2024 01:48:06.347] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: roofedv
-[28ene2024 01:48:06.481] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: roofedv finished after 133 ms
-[28ene2024 01:48:06.481] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: roofedv
-[28ene2024 01:48:06.502] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: roofedv finished after 20 ms
-[28ene2024 01:48:06.502] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id roofedv
-[28ene2024 01:48:06.512] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id roofedv finished after 9 ms
-[28ene2024 01:48:06.512] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id roofedv
-[28ene2024 01:48:06.514] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id roofedv finished after 1 ms
-[28ene2024 01:48:06.514] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 263 ms
-[28ene2024 01:48:06.532] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 162, old count: 162, new count: 163, removed stale: 0, written: 0
+[29ene2024 23:51:48.648] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 12, --assetsDir, C:\Users\JonXL\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, roofedv, --all, --output, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\generated\resources, --existing, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\main\resources]
+[29ene2024 23:51:48.650] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 17.0.7+7
+[29ene2024 23:51:48.651] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.1.2 starting: java version 17.0.7 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
+[29ene2024 23:51:48.730] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[29ene2024 23:51:48.804] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=jar:file:///C:/Users/JonXL/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar!/ Service=ModLauncher Env=UNKNOWN
+[29ene2024 23:51:49.437] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[29ene2024 23:51:50.184] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[29ene2024 23:51:50.189] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\JonXL\.gradle\caches\forge_gradle\assets, --assetIndex, 12, --mod, roofedv, --all, --output, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\generated\resources, --existing, C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\src\main\resources]
+[29ene2024 23:51:50.449] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\JonXL\Desktop\Mine-Packs\Modding\Mods\Roofed Void\roofedv-forge-1.20.4\build\createSrgToMcp\output.srg
+[29ene2024 23:51:50.450] [main/WARN] [mixin/]: Mixin environment was unable to detect the current side, sided mixins will not be applied
+[29ene2024 23:51:54.174] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 49.0.19, for MC 1.20.4 with MCP 20231207.112700
+[29ene2024 23:51:54.177] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v49.0.19 Initialized
+[29ene2024 23:51:54.273] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[29ene2024 23:51:54.549] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [roofedv]
+[29ene2024 23:51:54.602] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/JonXL/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4/forge-1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4-recomp.jar%2316!/assets/.mcassetsroot' uses unexpected schema
+[29ene2024 23:51:54.602] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/JonXL/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4/forge-1.20.4-49.0.19_mapped_parchment_1.20.3-2023.12.31-1.20.4-recomp.jar%2316!/data/.mcassetsroot' uses unexpected schema
+[29ene2024 23:51:54.713] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[29ene2024 23:51:54.762] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 48 ms
+[29ene2024 23:51:54.762] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[29ene2024 23:51:54.788] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 26 ms
+[29ene2024 23:51:54.788] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: roofedv
+[29ene2024 23:51:54.909] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: roofedv finished after 120 ms
+[29ene2024 23:51:54.910] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: roofedv
+[29ene2024 23:51:54.929] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: roofedv finished after 19 ms
+[29ene2024 23:51:54.929] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id roofedv
+[29ene2024 23:51:54.937] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id roofedv finished after 7 ms
+[29ene2024 23:51:54.937] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id roofedv
+[29ene2024 23:51:54.938] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id roofedv finished after 0 ms
+[29ene2024 23:51:54.938] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 225 ms
+[29ene2024 23:51:54.953] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 163, old count: 162, new count: 164, removed stale: 0, written: 1

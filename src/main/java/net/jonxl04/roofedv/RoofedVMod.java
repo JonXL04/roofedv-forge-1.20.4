@@ -2,8 +2,11 @@ package net.jonxl04.roofedv;
 
 import com.mojang.logging.LogUtils;
 import net.jonxl04.roofedv.block.ModBlocks;
+import net.jonxl04.roofedv.entity.ModEntities;
+import net.jonxl04.roofedv.entity.client.SpectatorRenderer;
 import net.jonxl04.roofedv.item.ModCreativeModeTabs;
 import net.jonxl04.roofedv.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -11,13 +14,12 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(RoofedVMod.MOD_ID)
@@ -36,6 +38,10 @@ public class RoofedVMod
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
+        ModEntities.register(modEventBus);
+
+        GeckoLib.initialize();
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -49,9 +55,9 @@ public class RoofedVMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+    /*    if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 
-        }
+        }*/
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
@@ -66,9 +72,8 @@ public class RoofedVMod
     public static class ClientModEvents
     {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.SPECTATOR.get(), SpectatorRenderer::new);
         }
     }
 }

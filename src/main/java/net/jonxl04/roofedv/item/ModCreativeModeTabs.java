@@ -46,6 +46,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SCRAP_CHESTPLATE.get());
                         pOutput.accept(ModItems.SCRAP_LEGGINGS.get());
                         pOutput.accept(ModItems.SCRAP_BOOTS.get());
+
+                        pOutput.accept(ModItems.SPECTATOR_SPAWN_EGG.get());
                     })
                     .build());
 

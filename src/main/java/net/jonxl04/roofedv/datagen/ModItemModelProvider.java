@@ -59,6 +59,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_STAIRS);
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_SLAB);
         wallItem(ModBlocks.SCRAP_SANDSTONE_WALL, ModBlocks.SCRAP_SANDSTONE);
+
+        withExistingParent(ModItems.SPECTATOR_SPAWN_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
     }
 
     // Shoutout to El_Redstoniano for making this
