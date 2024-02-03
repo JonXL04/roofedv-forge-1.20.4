@@ -23,12 +23,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SCRAP_BLOCK.get(),
                         ModBlocks.SCRAP_ORE.get(),
+                        ModBlocks.CUT_SCRAP.get(),
                         ModBlocks.SCRAP_PLATE_BLOCK.get(),
                         ModBlocks.SCRAP_CUT_SANDSTONE.get(),
                         ModBlocks.SCRAP_SANDSTONE.get(),
                         ModBlocks.SCRAP_SMOOTH_SANDSTONE.get(),
                         ModBlocks.MERCHITE_BLOCK.get(),
-                        ModBlocks.MERCHITE_ORE.get()
+                        ModBlocks.MERCHITE_ORE.get(),
+                        ModBlocks.MERCHITE_CRYSTAL.get(),
+                        ModBlocks.MERCHITE_LAMP.get()
                 );
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -40,10 +43,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.SCRAP_BLOCK.get(),
+                        ModBlocks.CUT_SCRAP.get(),
                         ModBlocks.SCRAP_ORE.get(),
                         ModBlocks.SCRAP_PLATE_BLOCK.get(),
                         ModBlocks.MERCHITE_BLOCK.get(),
-                        ModBlocks.MERCHITE_ORE.get()
+                        ModBlocks.MERCHITE_ORE.get(),
+                        ModBlocks.MERCHITE_LAMP.get(),
+                        ModBlocks.MERCHITE_CRYSTAL.get()
                 );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL);
@@ -53,12 +59,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
         this.tag(BlockTags.WALLS)
-                .add(ModBlocks.SCRAP_SANDSTONE.get()
+                .add(ModBlocks.SCRAP_SANDSTONE_WALL.get()
                 );
 
         this.tag(ModTags.Blocks.METAL_SCRAPS)
                 .add(ModBlocks.SCRAP_BLOCK.get(),
                         ModBlocks.SCRAP_PLATE_BLOCK.get(),
+                        ModBlocks.CUT_SCRAP.get(),
                         ModBlocks.SCRAP_SAND.get(),
                         ModBlocks.SCRAP_CUT_SANDSTONE.get(),
                         ModBlocks.SCRAP_SANDSTONE.get(),

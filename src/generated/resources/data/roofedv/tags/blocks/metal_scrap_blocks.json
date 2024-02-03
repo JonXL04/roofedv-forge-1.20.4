@@ -2,6 +2,7 @@
   "values": [
     "roofedv:scrap_block",
     "roofedv:scrap_plate_block",
+    "roofedv:cut_scrap",
     "roofedv:scrap_sand",
     "roofedv:scrap_cut_sandstone",
     "roofedv:scrap_sandstone",

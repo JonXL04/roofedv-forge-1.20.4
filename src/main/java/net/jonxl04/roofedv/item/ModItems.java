@@ -23,9 +23,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> MERCHITE = ITEMS.register("merchite",
             () -> new FuelItem(new Item.Properties(),1800));
-
     public static final RegistryObject<Item> MERCHITE_SHARD = ITEMS.register("merchite_shard",
             () -> new FuelItem(new Item.Properties(),200));
+    public static final RegistryObject<Item> MERCHITE_FRAGMENT = ITEMS.register("merchite_fragment",
+            () -> new FuelItem(new Item.Properties(),800));
 
     public static final RegistryObject<Item> SCRAP_SWORD = ITEMS.register("scrap_sword",
             () -> new SwordItem(ModToolTiers.SCRAP, 3, -2.4f, new Item.Properties()));

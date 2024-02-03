@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "roofedv:merchite_fragment"
+    }
+  ],
+  "result": {
+    "item": "roofedv:merchite_shard",
+    "count": 4
+  }
+}

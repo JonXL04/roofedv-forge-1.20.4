@@ -30,12 +30,16 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE_WALL.get());
 
                         pOutput.accept(ModBlocks.SCRAP_BLOCK.get());
+                        pOutput.accept(ModBlocks.CUT_SCRAP.get());
                         pOutput.accept(ModBlocks.SCRAP_PLATE_BLOCK.get());
                         pOutput.accept(ModItems.SCRAP_INGOT.get());
                         pOutput.accept(ModItems.SCRAP_SHARDS.get());
                         pOutput.accept(ModBlocks.MERCHITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.MERCHITE_CRYSTAL.get());
                         pOutput.accept(ModItems.MERCHITE.get());
+                        pOutput.accept(ModItems.MERCHITE_FRAGMENT.get());
                         pOutput.accept(ModItems.MERCHITE_SHARD.get());
+                        pOutput.accept(ModBlocks.MERCHITE_LAMP.get());
 
                         pOutput.accept(ModItems.SCRAP_SWORD.get());
                         pOutput.accept(ModItems.SCRAP_PICKAXE.get());

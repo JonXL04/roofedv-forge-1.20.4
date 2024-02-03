@@ -27,12 +27,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SCRAP_BLOCK.get());
         this.dropSelf(ModBlocks.SCRAP_SAND.get());
         this.dropSelf(ModBlocks.SCRAP_PLATE_BLOCK.get());
+        this.dropSelf(ModBlocks.CUT_SCRAP.get());
         this.dropSelf(ModBlocks.SCRAP_SANDSTONE.get());
         this.dropSelf(ModBlocks.SCRAP_SANDSTONE_WALL.get());
         this.dropSelf(ModBlocks.SCRAP_SANDSTONE_STAIRS.get());
         this.dropSelf(ModBlocks.SCRAP_CUT_SANDSTONE.get());
         this.dropSelf(ModBlocks.SCRAP_SMOOTH_SANDSTONE.get());
         this.dropSelf(ModBlocks.MERCHITE_BLOCK.get());
+        this.dropSelf(ModBlocks.MERCHITE_LAMP.get());
 
         this.add(ModBlocks.SCRAP_SANDSTONE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SCRAP_SANDSTONE_SLAB.get()));
@@ -41,6 +43,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCustomOreDrops(ModBlocks.SCRAP_ORE.get(), ModItems.SCRAP_SHARDS.get(),1.0F,2.0F));
         this.add(ModBlocks.MERCHITE_ORE.get(),
                 block -> createOreDrop(ModBlocks.MERCHITE_ORE.get(), ModItems.MERCHITE.get()));
+        this.add(ModBlocks.MERCHITE_CRYSTAL.get(),
+                block -> createCustomNonOreDrops(ModBlocks.MERCHITE_CRYSTAL.get(), ModItems.MERCHITE_FRAGMENT.get(), 2, 4));
     }
 
     protected LootTable.Builder createCustomOreDrops(Block pBlock, Item item, float min, float max) {
@@ -49,6 +53,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(min, max)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createCustomNonOreDrops(Block pBlock, Item item, float min, float max) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(min, max)))));
     }
 
     @Override

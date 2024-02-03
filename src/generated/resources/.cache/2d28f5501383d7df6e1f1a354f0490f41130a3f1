@@ -1,11 +1,11 @@
-// 1.20.4	2024-01-27T22:53:09.9517597	Tags for minecraft:block mod id roofedv
+// 1.20.4	2024-02-03T16:27:46.5237631	Tags for minecraft:block mod id roofedv
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/forge/tags/blocks/needs_netherite_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/mineable/hoe.json
-adc233f802d6200164d549f9b2d86c3b6b925e07 data/minecraft/tags/blocks/mineable/pickaxe.json
+8ea9ceda85680f3b390ef25828ff69be60189e6c data/minecraft/tags/blocks/mineable/pickaxe.json
 bf69b3b4e6c4f1ce9fd88cf2af69fa52fa8fe619 data/minecraft/tags/blocks/mineable/shovel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_diamond_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/needs_iron_tool.json
-36dce5c5c36c2e1bf856a7f00e412e6daf660f81 data/minecraft/tags/blocks/needs_stone_tool.json
-ff52c7343908a691a7012323f2789d42db7c1ecf data/minecraft/tags/blocks/walls.json
-5fda724b6c862ee8d22e54cff682ea9fe86ff6a6 data/roofedv/tags/blocks/metal_scrap_blocks.json
+a73ac3e7ceaa43c3529ba629be20d65481cd6b7e data/minecraft/tags/blocks/needs_stone_tool.json
+79484a0c33093a017757dada7f61ade45381f968 data/minecraft/tags/blocks/walls.json
+0fa47305e97b0128bbfc471965016e09703fc464 data/roofedv/tags/blocks/metal_scrap_blocks.json

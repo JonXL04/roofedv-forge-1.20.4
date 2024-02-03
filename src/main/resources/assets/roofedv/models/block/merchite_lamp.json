@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "roofedv:block/scrap_plate_big",
+    "side": "roofedv:block/merchite_lamp"
+  }
+}

@@ -20,6 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.SCRAP_BLOCK);
+        blockWithItem(ModBlocks.CUT_SCRAP);
         blockWithItem(ModBlocks.SCRAP_PLATE_BLOCK);
         blockWithItem(ModBlocks.SCRAP_ORE);
         blockWithItem(ModBlocks.SCRAP_SAND);
@@ -28,6 +29,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         //blockWithItem(ModBlocks.SCRAP_CUT_SANDSTONE);
         blockWithItem(ModBlocks.MERCHITE_BLOCK);
         blockWithItem(ModBlocks.MERCHITE_ORE);
+        blockWithItem(ModBlocks.MERCHITE_CRYSTAL);
 
         stairsBlock(((StairBlock) ModBlocks.SCRAP_SANDSTONE_STAIRS.get()), blockTexture(ModBlocks.SCRAP_SANDSTONE.get()));
         slabBlock(((SlabBlock) ModBlocks.SCRAP_SANDSTONE_SLAB.get()), blockTexture(ModBlocks.SCRAP_SANDSTONE.get()), blockTexture(ModBlocks.SCRAP_SANDSTONE.get()));

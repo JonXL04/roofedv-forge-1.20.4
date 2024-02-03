@@ -1,9 +1,12 @@
 {
   "values": [
     "roofedv:scrap_block",
+    "roofedv:cut_scrap",
     "roofedv:scrap_ore",
     "roofedv:scrap_plate_block",
     "roofedv:merchite_block",
-    "roofedv:merchite_ore"
+    "roofedv:merchite_ore",
+    "roofedv:merchite_lamp",
+    "roofedv:merchite_crystal"
   ]
 }

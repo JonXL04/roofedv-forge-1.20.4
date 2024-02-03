@@ -27,6 +27,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SCRAP_PLATE_BLOCK = registerBlock("scrap_plate_block",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(4.5F, 6.0F).sound(SoundType.COPPER).mapColor(MapColor.RAW_IRON)));
 
+    public static final RegistryObject<Block> CUT_SCRAP = registerBlock("cut_scrap",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SCRAP_BLOCK.get())));
+
     public static final RegistryObject<Block> SCRAP_ORE = registerBlock("scrap_ore",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)));
 
@@ -34,7 +37,8 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(1,2), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COAL_ORE)));
 
     public static final RegistryObject<Block> SCRAP_SAND = registerBlock("scrap_sand",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SAND)) {
+            });
 
     public static final RegistryObject<Block> SCRAP_SANDSTONE = registerBlock("scrap_sandstone",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SANDSTONE)));
@@ -55,7 +59,12 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));
 
     public static final RegistryObject<Block> MERCHITE_BLOCK = registerBlock("merchite_block",
-            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.SMOOTH_SANDSTONE)));
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_BLOCK)));
+    public static final RegistryObject<Block> MERCHITE_CRYSTAL = registerBlock("merchite_crystal",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.AMETHYST_BLOCK)));
+
+    public static final RegistryObject<Block> MERCHITE_LAMP = registerBlock("merchite_lamp",
+            () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SCRAP_BLOCK.get())));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

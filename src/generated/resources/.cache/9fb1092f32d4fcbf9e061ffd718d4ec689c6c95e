@@ -1,10 +1,12 @@
-// 1.20.4	2024-01-28T01:47:46.9890299	Recipes
+// 1.20.4	2024-02-03T16:27:46.5276085	Recipes
 bfb814cbe280f9cbfa48ba76f2a14014f81f365d data/roofedv/advancements/recipes/combat/scrap_boots.json
 eb3ba02f669888a9b672b212428ac2f1ca822296 data/roofedv/advancements/recipes/combat/scrap_chestplate.json
 509a6118c25cd44d8fb7c19c90e237367bcc2f2d data/roofedv/advancements/recipes/combat/scrap_helmet.json
 6f1856d8187bca0b0cb809013cf0a4de329646b3 data/roofedv/advancements/recipes/combat/scrap_leggings.json
 b9821009a0a08be327d947b724639fabbac5d1f0 data/roofedv/advancements/recipes/combat/scrap_sword.json
+41deabf309b6aa2f11e302615a713bac8a830ace data/roofedv/advancements/recipes/misc/cut_scrap.json
 44dab39b666d48c590fc8f90b09e6b66dcd177ca data/roofedv/advancements/recipes/misc/merchite_block.json
+e485c57b37b429cc878a14aa7b17a8b9bfa829a3 data/roofedv/advancements/recipes/misc/merchite_crystal.json
 f7eb4510686d86be00e9e24ea9732e3159f84740 data/roofedv/advancements/recipes/misc/merchite_from_blasting_merchite_ore.json
 ccae71606d0da641de25c9bb182736b33793f3f6 data/roofedv/advancements/recipes/misc/merchite_from_smelting_merchite_ore.json
 a4c68737d6d71be70ea4c5629a2bdd51e1aac7a4 data/roofedv/advancements/recipes/misc/merchite_shard.json
@@ -26,8 +28,10 @@ d2ae376bbecdb2ef5278375829b8aa5d58ce2e8f data/roofedv/advancements/recipes/misc/
 9168a26b6477a76623585bdb1f002f5442be7642 data/roofedv/advancements/recipes/tools/scrap_hoe.json
 a2559dfae9361db5af25aae3fcaefb917bfa9d3f data/roofedv/advancements/recipes/tools/scrap_pickaxe.json
 57260d28e426f4458c75897489ba296be1685c9f data/roofedv/advancements/recipes/tools/scrap_shovel.json
+ad9d35c1be4cd92723fe43ab2b8d22c21ff3a657 data/roofedv/recipes/cut_scrap.json
 82d8e7c73226ee431e36f77c06bc818dfe093e62 data/roofedv/recipes/merchite_block.json
-42838792b2855fe48b8d5a81dca6b3923b7ba7d9 data/roofedv/recipes/merchite_from_blasting_merchite_ore.json
+d3db294313314eabad8af445b429ca967c45cae4 data/roofedv/recipes/merchite_crystal.json
+dfbb524c4f9b20edef2257ee6105811c55ad84c5 data/roofedv/recipes/merchite_from_blasting_merchite_ore.json
 159e52edc64c1d82771648cdbf69b91c1ead0406 data/roofedv/recipes/merchite_from_smelting_merchite_ore.json
 78161c03be59843cc68bd256cfeb8040b5aa0c1b data/roofedv/recipes/merchite_shard.json
 fda59a51d88e0e3bad8998ccd60cd4129a177dc7 data/roofedv/recipes/scrap_axe.json

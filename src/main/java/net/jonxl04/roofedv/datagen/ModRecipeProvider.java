@@ -60,6 +60,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModBlocks.SCRAP_PLATE_BLOCK.get()), has(ModBlocks.SCRAP_PLATE_BLOCK.get()))
                 .save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CUT_SCRAP.get(), 8)
+                .pattern("SS")
+                .pattern("SS")
+                .define('S',ModBlocks.SCRAP_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SCRAP_BLOCK.get()), has(ModBlocks.SCRAP_BLOCK.get()))
+                .save(pRecipeOutput);
+
         //Scrap Tools and Armor
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.SCRAP_SWORD.get())
                 .pattern(" S ")
@@ -157,7 +164,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Merchite
         oreSmelting(pRecipeOutput, Collections.singletonList(ModBlocks.MERCHITE_ORE.get()), RecipeCategory.MISC, (ItemLike) ModItems.MERCHITE.get(), 0.7F, 200, "merchite");
-        oreBlasting(pRecipeOutput, Collections.singletonList(ModBlocks.MERCHITE_ORE.get()), RecipeCategory.MISC, (ItemLike) ModItems.MERCHITE.get(), 0.7F, 200, "merchite");
+        oreBlasting(pRecipeOutput, Collections.singletonList(ModBlocks.MERCHITE_ORE.get()), RecipeCategory.MISC, (ItemLike) ModItems.MERCHITE.get(), 0.7F, 100, "merchite");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MERCHITE_BLOCK.get())
                 .pattern("SSS")
@@ -170,6 +177,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.MERCHITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.MERCHITE_BLOCK.get()), has(ModBlocks.MERCHITE_BLOCK.get()))
                 .save(pRecipeOutput);*/
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MERCHITE_CRYSTAL.get())
+                .pattern("SS")
+                .pattern("SS")
+                .define('S',ModItems.MERCHITE_FRAGMENT.get())
+                .unlockedBy(getHasName(ModItems.MERCHITE_FRAGMENT.get()), has(ModItems.MERCHITE_FRAGMENT.get()))
+                .save(pRecipeOutput);
 
         /*ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MERCHITE.get())
                 .pattern("SSS")

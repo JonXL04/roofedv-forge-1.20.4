@@ -55,6 +55,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SCRAP_BOOTS);
         simpleItem(ModItems.MERCHITE,"generated");
         simpleItem(ModItems.MERCHITE_SHARD,"generated");
+        simpleItem(ModItems.MERCHITE_FRAGMENT,"generated");
 
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_STAIRS);
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_SLAB);

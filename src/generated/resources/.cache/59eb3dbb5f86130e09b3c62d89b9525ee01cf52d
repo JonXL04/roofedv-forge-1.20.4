@@ -1,5 +1,8 @@
-// 1.20.4	2024-01-27T21:15:59.1659883	Loot Tables
+// 1.20.4	2024-02-03T16:27:46.5276085	Loot Tables
+f5e31b6e5c078cb63bca9e36a1c6b6732f528ead data/roofedv/loot_tables/blocks/cut_scrap.json
 d7931e8f2eb3752c653a3ba289627e717ace1015 data/roofedv/loot_tables/blocks/merchite_block.json
+7de5724b9f133c9f898c89ec709ea1904798481a data/roofedv/loot_tables/blocks/merchite_crystal.json
+db1efd035fa43013f735404d493a0972f4a8c3bf data/roofedv/loot_tables/blocks/merchite_lamp.json
 0bd16a13236389329ae6984b942247ff49087992 data/roofedv/loot_tables/blocks/merchite_ore.json
 dc74fdedbf0ebce72efc342b5148674d3b5946dc data/roofedv/loot_tables/blocks/scrap_block.json
 2ab8cd7984ae144768966df45789f3fe3cc1bfb3 data/roofedv/loot_tables/blocks/scrap_cut_sandstone.json

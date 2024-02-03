@@ -1,5 +1,7 @@
-// 1.20.4	2024-01-27T21:15:59.1651373	Block States: roofedv
+// 1.20.4	2024-02-03T16:27:46.5256868	Block States: roofedv
+51b6079ede4b3191ac31c2b8fba67bc4b8eb9303 assets/roofedv/blockstates/cut_scrap.json
 d7ec4af0dbe7f5ef0b36ecf836bb2d63e9e54ef0 assets/roofedv/blockstates/merchite_block.json
+a5c3d468ac2ea2e4f852eda97ebc21c69f2b7e7a assets/roofedv/blockstates/merchite_crystal.json
 61af323098292ed156db9a682ad40e27a3a144eb assets/roofedv/blockstates/merchite_ore.json
 249dc65e860b48b9d964bb550df66fb24f04a57c assets/roofedv/blockstates/scrap_block.json
 4635c05626875ae890f9d984dbe03d2972ab93cd assets/roofedv/blockstates/scrap_ore.json
@@ -8,7 +10,9 @@ f3158859adce00c1702fc070e16863cd2c813849 assets/roofedv/blockstates/scrap_sand.j
 b523a0c7e4c13e14682e52f6044b467eb21ebe77 assets/roofedv/blockstates/scrap_sandstone_slab.json
 123767747fe6a22c02ce6130d264e26bdd87cf37 assets/roofedv/blockstates/scrap_sandstone_stairs.json
 95fca1b4c6ba1ec62b110eb32a648041bc58e9ee assets/roofedv/blockstates/scrap_sandstone_wall.json
+44d70592a81fbe10f2a721f4d3cb666b813da5b9 assets/roofedv/models/block/cut_scrap.json
 e6215b29613586ea448e0693e4edfb7f879acc7a assets/roofedv/models/block/merchite_block.json
+713febdef6c05b21ccf2b10c1d5b81a13bffe7e9 assets/roofedv/models/block/merchite_crystal.json
 eef5c9cc4ebc043756fd082d90464a9180a9eac7 assets/roofedv/models/block/merchite_ore.json
 e9ad2cd073b8b4a87bd22d2c0dc7e37ea8c87a06 assets/roofedv/models/block/scrap_block.json
 2ce36837c5f28c839c1f889ec64a42b0fa0c58a1 assets/roofedv/models/block/scrap_ore.json
@@ -22,7 +26,9 @@ bc8fec9a6975b33c4d5e3857673357b344d3686b assets/roofedv/models/block/scrap_sands
 88177444550dc541f0cc482b1adaf7357105a9a5 assets/roofedv/models/block/scrap_sandstone_wall_post.json
 ad96c1a9f2e75463fe1bd6b476e42a78f2e84948 assets/roofedv/models/block/scrap_sandstone_wall_side.json
 460f9e7359bf21725f79b566b44f60fb0d3e2e2f assets/roofedv/models/block/scrap_sandstone_wall_side_tall.json
+ffcae2a52312b87ef0dce06a551e360134863f7f assets/roofedv/models/item/cut_scrap.json
 e9d08fd62f06757cc38649e46a3e06a0d78b42f2 assets/roofedv/models/item/merchite_block.json
+5e1bfc5630138a4be6aa289e61b4c9062b08cb1e assets/roofedv/models/item/merchite_crystal.json
 7c7a8d1cab68324e793ddbcd0e01131f22a34e0e assets/roofedv/models/item/merchite_ore.json
 ad469793eaa9bb6fe57bfb88a2c861b77269cbac assets/roofedv/models/item/scrap_block.json
 002460ffde30045c1c79f717c22d5b86635b7d9e assets/roofedv/models/item/scrap_ore.json
