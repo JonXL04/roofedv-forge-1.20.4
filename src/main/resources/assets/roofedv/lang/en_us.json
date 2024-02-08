@@ -51,6 +51,7 @@
 
   "tooltip.roofedv.on_hit.tooltip": "§7On hit:",
   "tooltip.roofedv.shifting_sword.tooltip": " §2Teleports the wielder through the target",
+  "tooltip.roofedv.quantum_sword.tooltip": " §2Affects the target with Quantum Entanglement",
   
   "creativetab.roofedv_tab": "Roofed Void Items"
 }
