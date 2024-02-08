@@ -22,7 +22,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModItems.SCRAP_SHARDS.get(), ModBlocks.SCRAP_ORE.get(), ModBlocks.SCRAP_SANDSTONE.get(),
             ModBlocks.SCRAP_SMOOTH_SANDSTONE.get(), ModBlocks.SCRAP_CUT_SANDSTONE.get()),
             SCRAP_SMELTABLES = List.of(
-            ModItems.SCRAP_SHARDS.get(), ModBlocks.SCRAP_ORE.get());
+            ModItems.SCRAP_SHARDS.get(), ModBlocks.SCRAP_ORE.get()),
+            MECHASTEEL_SMELTABLES = List.of(
+                    ModItems.MECHANICAL_SCRAP.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -143,6 +145,55 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("   ")
                 .define('S',ModItems.SCRAP_INGOT.get())
                 .unlockedBy(getHasName(ModItems.SCRAP_INGOT.get()), has(ModItems.SCRAP_INGOT.get()))
+                .save(pRecipeOutput);
+
+        //Mechasteel metal
+        oreBlasting(pRecipeOutput, MECHASTEEL_SMELTABLES, RecipeCategory.MISC, (ItemLike) ModItems.MECHASTEEL_INGOT.get(), 1.0F, 150, "mechasteel");
+
+        //Mechasteel Tools and Armor
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MECHASTEEL_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" I ")
+                .define('S',ModItems.MECHASTEEL_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.MECHASTEEL_INGOT.get()), has(ModItems.MECHASTEEL_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MECHASTEEL_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('S',ModItems.MECHASTEEL_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.MECHASTEEL_INGOT.get()), has(ModItems.MECHASTEEL_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MECHASTEEL_SHOVEL.get())
+                .pattern(" S ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('S',ModItems.MECHASTEEL_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.MECHASTEEL_INGOT.get()), has(ModItems.MECHASTEEL_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MECHASTEEL_AXE.get())
+                .pattern("SS ")
+                .pattern("SI ")
+                .pattern(" I ")
+                .define('S',ModItems.MECHASTEEL_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.MECHASTEEL_INGOT.get()), has(ModItems.MECHASTEEL_INGOT.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.MECHASTEEL_HOE.get())
+                .pattern("SS ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .define('S',ModItems.MECHASTEEL_INGOT.get())
+                .define('I',Tags.Items.RODS_WOODEN)
+                .unlockedBy(getHasName(ModItems.MECHASTEEL_INGOT.get()), has(ModItems.MECHASTEEL_INGOT.get()))
                 .save(pRecipeOutput);
 
         //Scrap sand

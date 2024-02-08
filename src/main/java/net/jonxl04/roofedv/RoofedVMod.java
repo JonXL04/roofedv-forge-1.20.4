@@ -2,12 +2,12 @@ package net.jonxl04.roofedv;
 
 import com.mojang.logging.LogUtils;
 import net.jonxl04.roofedv.block.ModBlocks;
+import net.jonxl04.roofedv.effect.ModEffects;
 import net.jonxl04.roofedv.entity.ModEntities;
 import net.jonxl04.roofedv.entity.client.SpectatorRenderer;
 import net.jonxl04.roofedv.item.ModCreativeModeTabs;
 import net.jonxl04.roofedv.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -39,6 +39,8 @@ public class RoofedVMod
         ModBlocks.register(modEventBus);
 
         ModEntities.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         GeckoLib.initialize();
 

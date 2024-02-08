@@ -13,6 +13,19 @@
   "item.roofedv.merchite": "Merchite",
   "item.roofedv.merchite_shard": "Merchite Shard",
   "item.roofedv.merchite_fragment": "Merchite Fragment",
+  "item.roofedv.mechasteel_ingot": "Mechasteel Ingot",
+  "item.roofedv.mechanical_scrap": "Mechanical Scrap",
+  "item.roofedv.mechasteel_sword": "Mechasteel Sword",
+  "item.roofedv.mechasteel_pickaxe": "Mechasteel Pickaxe",
+  "item.roofedv.mechasteel_shovel": "Mechasteel Shovel",
+  "item.roofedv.mechasteel_axe": "Mechasteel Axe",
+  "item.roofedv.mechasteel_hoe": "Mechasteel Hoe",
+  "item.roofedv.shifting_saberblade": "§dShifting Saber Blade",
+  "item.roofedv.slashing_saberblade": "§cSlashing Saber Blade",
+  "item.roofedv.leaching_saberblade": "§eLeaching Saber Blade",
+  "item.roofedv.lighting_saberblade": "§aLighting Saber Blade",
+  "item.roofedv.quantum_saberblade": "§9Quantum Saber Blade",
+  "item.roofedv.radiant_saberblade": "§eRadiant Saber Blade",
 
   "item.roofedv.spectator_spawn_egg": "Spectator Spawn Egg",
 
@@ -33,6 +46,11 @@
   "block.roofedv.merchite_crystal": "Merchite Crystal",
   "block.roofedv.merchite_lamp": "Merchite Lamp",
 
+  "effect.roofedv.quantum_entanglement": "Quantum Entanglement",
+
+
+  "tooltip.roofedv.on_hit.tooltip": "§7On hit:",
+  "tooltip.roofedv.shifting_sword.tooltip": " §2Teleports the wielder through the target",
   
   "creativetab.roofedv_tab": "Roofed Void Items"
 }

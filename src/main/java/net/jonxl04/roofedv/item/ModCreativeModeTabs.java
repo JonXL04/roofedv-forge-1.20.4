@@ -39,6 +39,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.MERCHITE.get());
                         pOutput.accept(ModItems.MERCHITE_FRAGMENT.get());
                         pOutput.accept(ModItems.MERCHITE_SHARD.get());
+                        pOutput.accept(ModItems.MECHASTEEL_INGOT.get());
+                        pOutput.accept(ModItems.MECHANICAL_SCRAP.get());
                         pOutput.accept(ModBlocks.MERCHITE_LAMP.get());
 
                         pOutput.accept(ModItems.SCRAP_SWORD.get());
@@ -46,10 +48,17 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SCRAP_SHOVEL.get());
                         pOutput.accept(ModItems.SCRAP_AXE.get());
                         pOutput.accept(ModItems.SCRAP_HOE.get());
+                        pOutput.accept(ModItems.MECHASTEEL_SWORD.get());
+                        pOutput.accept(ModItems.MECHASTEEL_PICKAXE.get());
+                        pOutput.accept(ModItems.MECHASTEEL_SHOVEL.get());
+                        pOutput.accept(ModItems.MECHASTEEL_AXE.get());
+                        pOutput.accept(ModItems.MECHASTEEL_HOE.get());
+                        pOutput.accept(ModItems.SHIFTING_SABERBLADE.get());
                         pOutput.accept(ModItems.SCRAP_HELMET.get());
                         pOutput.accept(ModItems.SCRAP_CHESTPLATE.get());
                         pOutput.accept(ModItems.SCRAP_LEGGINGS.get());
                         pOutput.accept(ModItems.SCRAP_BOOTS.get());
+
 
                         pOutput.accept(ModItems.SPECTATOR_SPAWN_EGG.get());
                     })

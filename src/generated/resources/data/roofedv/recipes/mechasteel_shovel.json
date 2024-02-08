@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "forge:rods/wooden"
+    },
+    "S": {
+      "item": "roofedv:mechasteel_ingot"
+    }
+  },
+  "pattern": [
+    " S ",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "item": "roofedv:mechasteel_shovel"
+  }
+}

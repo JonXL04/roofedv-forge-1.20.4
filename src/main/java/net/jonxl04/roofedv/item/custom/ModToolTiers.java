@@ -19,4 +19,9 @@ public class ModToolTiers {
                     BlockTags.NEEDS_IRON_TOOL, () -> Ingredient.of(ModItems.SCRAP_INGOT.get())),
             new ResourceLocation(RoofedVMod.MOD_ID, "scrap"), List.of(Tiers.STONE),List.of(Tiers.DIAMOND)
     );
+    public static final Tier MECHASTEEL = TierSortingRegistry.registerTier(
+            new ForgeTier(4, 4062, 8.5F, 4.0F, 18,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.MECHASTEEL_INGOT.get())),
+            new ResourceLocation(RoofedVMod.MOD_ID, "mechasteel"), List.of(Tiers.DIAMOND),List.of(Tiers.NETHERITE)
+    );
 }

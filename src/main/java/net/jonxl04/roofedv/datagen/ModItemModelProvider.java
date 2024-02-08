@@ -56,6 +56,13 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MERCHITE,"generated");
         simpleItem(ModItems.MERCHITE_SHARD,"generated");
         simpleItem(ModItems.MERCHITE_FRAGMENT,"generated");
+        simpleItem(ModItems.MECHASTEEL_INGOT, "generated");
+        simpleItem(ModItems.MECHANICAL_SCRAP, "generated");
+        simpleItem(ModItems.MECHASTEEL_SWORD, "handheld");
+        simpleItem(ModItems.MECHASTEEL_PICKAXE, "handheld");
+        simpleItem(ModItems.MECHASTEEL_SHOVEL, "handheld");
+        simpleItem(ModItems.MECHASTEEL_AXE, "handheld");
+        simpleItem(ModItems.MECHASTEEL_HOE, "handheld");
 
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_STAIRS);
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_SLAB);

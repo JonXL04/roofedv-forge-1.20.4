@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "roofedv:item/slashing_saberblade_long"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "roofedv:item/slashing_saberblade_short"
+    },
+    "fixed": {
+      "parent": "roofedv:item/slashing_saberblade_short"
+    },
+    "ground": {
+      "parent": "roofedv:item/slashing_saberblade_short"
+    }
+  }
+}

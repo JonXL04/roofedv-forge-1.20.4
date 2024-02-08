@@ -1,4 +1,11 @@
-// 1.20.4	2024-02-03T02:13:26.0257128	Item Models: roofedv
+// 1.20.4	2024-02-04T15:56:49.8304461	Item Models: roofedv
+69b67ff30bae5130f428e7a54694f59d77da1fa5 assets/roofedv/models/item/mechanical_scrap.json
+1de3e2701808b8daa72d8acde9531018030d4d26 assets/roofedv/models/item/mechasteel_axe.json
+4e3bf09f18a6cdf446ff5ea84278ec94257dc9ec assets/roofedv/models/item/mechasteel_hoe.json
+53e10067456508c7e96c0f89e322968c33b86201 assets/roofedv/models/item/mechasteel_ingot.json
+5561d7c3c32aa3ee350c8df77684c99ff001846e assets/roofedv/models/item/mechasteel_pickaxe.json
+7e0a85c807a8fa14c35a6178e2440f86ff505133 assets/roofedv/models/item/mechasteel_shovel.json
+1210751404040d4e9e1892e35e37925c85e11890 assets/roofedv/models/item/mechasteel_sword.json
 3efc13af30b305ac933c9c7018571e6774a3d253 assets/roofedv/models/item/merchite.json
 4a37e4163043bd0560253025a4a43f10dbe28f9a assets/roofedv/models/item/merchite_fragment.json
 4cc48c940167e8e07364bd56d53bddda0b3b92a2 assets/roofedv/models/item/merchite_shard.json
