@@ -1,0 +1,6 @@
+{
+  "parent": "roofedv:item/model_saberblade",
+  "textures": {
+    "layer0": "roofedv:item/radiant_saberblade"
+  }
+}

@@ -51,7 +51,13 @@
 
   "tooltip.roofedv.on_hit.tooltip": "§7On hit:",
   "tooltip.roofedv.shifting_sword.tooltip": " §2Teleports the wielder through the target",
+  "tooltip.roofedv.leaching_sword.tooltip": " §2Recovers health equivalent to a percentage of the damage dealt",
   "tooltip.roofedv.quantum_sword.tooltip": " §2Affects the target with Quantum Entanglement",
-  
+
+  "tooltip.roofedv.on_use.tooltip": "§7When used:",
+  "tooltip.roofedv.slashing_sword.tooltip": " §2Throws a slash projectile",
+  "tooltip.roofedv.lightning_sword.tooltip": " §2Summons a lightning slash at the pointed location",
+  "tooltip.roofedv.radiant_sword.tooltip": " §2Generates a pushing shockwave",
+
   "creativetab.roofedv_tab": "Roofed Void Items"
 }

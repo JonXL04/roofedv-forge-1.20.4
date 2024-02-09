@@ -2,10 +2,7 @@ package net.jonxl04.roofedv.item;
 
 import net.jonxl04.roofedv.RoofedVMod;
 import net.jonxl04.roofedv.entity.ModEntities;
-import net.jonxl04.roofedv.item.custom.FuelItem;
-import net.jonxl04.roofedv.item.custom.ModToolTiers;
-import net.jonxl04.roofedv.item.custom.QuantumSwordItem;
-import net.jonxl04.roofedv.item.custom.ShiftingSwordItem;
+import net.jonxl04.roofedv.item.custom.*;
 import net.minecraft.world.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -52,7 +49,7 @@ public class ModItems {
     public static final RegistryObject<Item> QUANTUM_SABERBLADE = ITEMS.register("quantum_saberblade",
             () -> new QuantumSwordItem(ModToolTiers.MECHASTEEL, 4, -2.2f, new Item.Properties()));
     public static final RegistryObject<Item> SLASHING_SABERBLADE = ITEMS.register("slashing_saberblade",
-            () -> new ShiftingSwordItem(ModToolTiers.MECHASTEEL, 4, -2.2f, new Item.Properties()));
+            () -> new SlashingSwordItem(ModToolTiers.MECHASTEEL, 4, -2.2f, new Item.Properties()));
     public static final RegistryObject<Item> MECHASTEEL_SWORD = ITEMS.register("mechasteel_sword",
             () -> new SwordItem(ModToolTiers.MECHASTEEL, 3, -2.4f, new Item.Properties()));
     public static final RegistryObject<Item> MECHASTEEL_PICKAXE = ITEMS.register("mechasteel_pickaxe",
