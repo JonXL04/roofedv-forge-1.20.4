@@ -56,6 +56,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SHIFTING_SABERBLADE.get());
                         pOutput.accept(ModItems.SLASHING_SABERBLADE.get());
                         pOutput.accept(ModItems.QUANTUM_SABERBLADE.get());
+                        pOutput.accept(ModItems.LEACHING_SABERBLADE.get());
                         pOutput.accept(ModItems.SCRAP_HELMET.get());
                         pOutput.accept(ModItems.SCRAP_CHESTPLATE.get());
                         pOutput.accept(ModItems.SCRAP_LEGGINGS.get());

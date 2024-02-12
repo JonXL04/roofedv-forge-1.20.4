@@ -48,6 +48,8 @@ public class ModItems {
             () -> new ShiftingSwordItem(ModToolTiers.MECHASTEEL, 4, -2.2f, new Item.Properties()));
     public static final RegistryObject<Item> QUANTUM_SABERBLADE = ITEMS.register("quantum_saberblade",
             () -> new QuantumSwordItem(ModToolTiers.MECHASTEEL, 4, -2.2f, new Item.Properties()));
+    public static final RegistryObject<Item> LEACHING_SABERBLADE = ITEMS.register("leaching_saberblade",
+            () -> new LeachingSwordItem(ModToolTiers.MECHASTEEL, 4, -2.2f, new Item.Properties()));
     public static final RegistryObject<Item> SLASHING_SABERBLADE = ITEMS.register("slashing_saberblade",
             () -> new SlashingSwordItem(ModToolTiers.MECHASTEEL, 4, -2.2f, new Item.Properties()));
     public static final RegistryObject<Item> MECHASTEEL_SWORD = ITEMS.register("mechasteel_sword",
