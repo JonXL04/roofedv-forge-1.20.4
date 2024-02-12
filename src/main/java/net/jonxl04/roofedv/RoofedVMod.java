@@ -7,6 +7,8 @@ import net.jonxl04.roofedv.entity.ModEntities;
 import net.jonxl04.roofedv.entity.client.SpectatorRenderer;
 import net.jonxl04.roofedv.item.ModCreativeModeTabs;
 import net.jonxl04.roofedv.item.ModItems;
+import net.jonxl04.roofedv.loot.ModLootModifiers;
+import net.jonxl04.roofedv.particle.ModParticle;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -37,10 +39,11 @@ public class RoofedVMod
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModEntities.register(modEventBus);
 
         ModEffects.register(modEventBus);
+        ModParticle.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         GeckoLib.initialize();
 

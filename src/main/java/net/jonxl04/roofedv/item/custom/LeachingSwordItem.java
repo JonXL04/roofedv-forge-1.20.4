@@ -24,7 +24,7 @@ public class LeachingSwordItem extends SwordItem {
             p_43296_.broadcastBreakEvent(EquipmentSlot.MAINHAND);
         });
 
-        pAttacker.heal(2*(0.625f-pAttacker.swingTime)/0.625f);
+        pAttacker.heal(3*(0.625f-pAttacker.swingTime)/0.625f);
 
         pAttacker.level().playSound((Player)null, pAttacker.getX(), pAttacker.getY(), pAttacker.getZ(),
                 SoundEvents.PLAYER_TELEPORT, SoundSource.NEUTRAL, 1F,
