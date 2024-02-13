@@ -23,33 +23,44 @@ public class LightningSwordItem extends SwordItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pHand);
+        boolean hit = false;
         if(!pLevel.isClientSide()) {
-            List <LivingEntity> area = getEntitiesInProximity(pPlayer, 4.5f, pLevel);
-            pPlayer.getCooldowns().addCooldown(this, 100);
+            Vec3 attackPos = pPlayer.position().add(pPlayer.getLookAngle().multiply(5,5,5));
+
+
+
+            List <LivingEntity> area = getEntitiesInProximity(attackPos, 1.5f, pLevel);
+            pPlayer.getCooldowns().addCooldown(this, 10);
 
             while(!area.isEmpty()) {
                 if (area.get(0) == pPlayer) {
                     area.remove(0);
                 }
                 else {
-                    itemstack.hurtAndBreak(1, pPlayer, (p_41288_) -> {
-                        p_41288_.broadcastBreakEvent(pHand);
-                    });
+                    hit = true;
                     float distance = area.get(0).distanceTo(pPlayer) + 1;
-                    area.get(0).hurt(pPlayer.damageSources().magic(), 8 / distance);
+                    area.get(0).hurt(pPlayer.damageSources().magic(), 8);
                     area.get(0).addDeltaMovement(((
                             area.get(0).position().subtract(pPlayer.position())).normalize())
-                            .add(0, 1, 0)
-                            .multiply(3 / (distance),
-                                      2 / (distance),
-                                      3 / (distance))
+                            .add(0, 0.5, 0)
+                            .multiply(1 / (distance),
+                                      1 / (distance),
+                                      1 / (distance))
                     );
                     //pPlayer.sendSystemMessage(Component.literal("Targeted " + area.get(0).getType()));
                     area.remove(0);
                 }
             }
+            if(hit)
+            {
+                itemstack.hurtAndBreak(1, pPlayer, (p_41288_) -> {
+                    p_41288_.broadcastBreakEvent(pHand);
+                });
+                hit = false;
+            }
+
             pPlayer.level().playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
-                    SoundEvents.ALLAY_HURT, SoundSource.NEUTRAL, 1F,
+                    SoundEvents.TRIDENT_THUNDER, SoundSource.NEUTRAL, 1F,
                     2.5F / (pPlayer.level().getRandom().nextFloat() * 0.4F + 0.8F));
         }
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
@@ -58,7 +69,7 @@ public class LightningSwordItem extends SwordItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.on_use.tooltip"));
-        pTooltipComponents.add(Component.translatable("tooltip.roofedv.radiant_sword.tooltip"));
+        pTooltipComponents.add(Component.translatable("tooltip.roofedv.lightning_sword.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
 
@@ -67,9 +78,8 @@ public class LightningSwordItem extends SwordItem {
         return Rarity.EPIC;
     }
 
-    public final List<LivingEntity> getEntitiesInProximity(LivingEntity entity, double radius, Level level) {
-        Vec3 center = new Vec3(entity.position().x, entity.position().y, entity.position().z);
-        List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, new AABB(center.subtract(new Vec3(radius,radius,radius)), center.add(new Vec3(radius, radius, radius))));
+    public final List<LivingEntity> getEntitiesInProximity(Vec3 pos, double radius, Level level) {
+        List<LivingEntity> targets = level.getEntitiesOfClass(LivingEntity.class, new AABB(pos.subtract(new Vec3(radius,radius,radius)), pos.add(new Vec3(radius, radius, radius))));
         return targets;
     }
 }

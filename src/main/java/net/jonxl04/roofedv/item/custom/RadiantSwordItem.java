@@ -1,5 +1,11 @@
 package net.jonxl04.roofedv.item.custom;
 
+import net.jonxl04.roofedv.particle.ModParticle;
+import net.minecraft.client.particle.Particle;
+import net.minecraft.client.particle.SmokeParticle;
+import net.minecraft.core.particles.ParticleGroup;
+import net.minecraft.core.particles.ParticleOptions;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -23,6 +29,7 @@ public class RadiantSwordItem extends SwordItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pHand);
+        boolean hit = false;
         if(!pLevel.isClientSide()) {
             List <LivingEntity> area = getEntitiesInProximity(pPlayer, 4.5f, pLevel);
             pPlayer.getCooldowns().addCooldown(this, 100);
@@ -32,10 +39,11 @@ public class RadiantSwordItem extends SwordItem {
                     area.remove(0);
                 }
                 else {
-                    itemstack.hurtAndBreak(1, pPlayer, (p_41288_) -> {
-                        p_41288_.broadcastBreakEvent(pHand);
-                    });
+                    hit = true;
                     float distance = area.get(0).distanceTo(pPlayer) + 1;
+                    pLevel.addParticle(ParticleTypes.EXPLOSION,area.get(0)
+                            .position().x,area.get(0).position().y, area.get(0).position().z,
+                            0,0,0 );
                     area.get(0).hurt(pPlayer.damageSources().magic(), 8 / distance);
                     area.get(0).addDeltaMovement(((
                             area.get(0).position().subtract(pPlayer.position())).normalize())
@@ -48,6 +56,14 @@ public class RadiantSwordItem extends SwordItem {
                     area.remove(0);
                 }
             }
+            if(hit)
+            {
+                itemstack.hurtAndBreak(1, pPlayer, (p_41288_) -> {
+                p_41288_.broadcastBreakEvent(pHand);
+                });
+                hit = false;
+            }
+
             pPlayer.level().playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
                     SoundEvents.ALLAY_HURT, SoundSource.NEUTRAL, 1F,
                     2.5F / (pPlayer.level().getRandom().nextFloat() * 0.4F + 0.8F));
