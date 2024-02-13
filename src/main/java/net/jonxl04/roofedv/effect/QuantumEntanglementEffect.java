@@ -1,5 +1,6 @@
 package net.jonxl04.roofedv.effect;
 
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
@@ -22,6 +23,7 @@ public class QuantumEntanglementEffect extends MobEffect {
             if(stacks>pAmplifier+5)
                 stacks = pAmplifier+5;
             pLivingEntity.hurt(pLivingEntity.damageSources().magic(),stacks * (2+pAmplifier));
+            pLivingEntity.sendSystemMessage(Component.literal(stacks + " stacks, dealing " + (stacks * (2+pAmplifier))));
             stacks = 1;
         }
         previousHurtTime = pLivingEntity.getLastHurtByMobTimestamp();

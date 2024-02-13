@@ -27,8 +27,8 @@ public class LeachingSwordItem extends SwordItem {
         pAttacker.heal(3*(0.625f-pAttacker.swingTime)/0.625f);
 
         pAttacker.level().playSound((Player)null, pAttacker.getX(), pAttacker.getY(), pAttacker.getZ(),
-                SoundEvents.PLAYER_TELEPORT, SoundSource.NEUTRAL, 1F,
-                0.8F / (pAttacker.level().getRandom().nextFloat() * 0.4F + 0.8F));
+                SoundEvents.SCULK_BLOCK_CHARGE, SoundSource.NEUTRAL, 1F,
+                2F / (pAttacker.level().getRandom().nextFloat() * 0.4F + 0.8F));
         return true;
     }
 

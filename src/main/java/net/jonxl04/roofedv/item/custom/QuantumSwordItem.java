@@ -34,8 +34,8 @@ public class QuantumSwordItem extends SwordItem {
         pTarget.addEffect(new MobEffectInstance(ModEffects.QUANTUM_ENTANGLEMENT.get(),100));
 
         pAttacker.level().playSound((Player)null, pAttacker.getX(), pAttacker.getY(), pAttacker.getZ(),
-                SoundEvents.PLAYER_TELEPORT, SoundSource.NEUTRAL, 1F,
-                0.8F / (pAttacker.level().getRandom().nextFloat() * 0.4F + 0.8F));
+                SoundEvents.BEACON_DEACTIVATE, SoundSource.NEUTRAL, 1F,
+                3F / (pAttacker.level().getRandom().nextFloat() * 0.4F + 0.8F));
         return true;
     }
 
