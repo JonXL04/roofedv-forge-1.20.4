@@ -1,10 +1,5 @@
 package net.jonxl04.roofedv.item.custom;
 
-import net.jonxl04.roofedv.particle.ModParticle;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.particle.SmokeParticle;
-import net.minecraft.core.particles.ParticleGroup;
-import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
@@ -33,7 +28,11 @@ public class RadiantSwordItem extends SwordItem {
         if(!pLevel.isClientSide()) {
             List <LivingEntity> area = getEntitiesInProximity(pPlayer, 4.5f, pLevel);
             pPlayer.getCooldowns().addCooldown(this, 100);
-
+            for(int i = 0; i < 20; ++i) {
+                pLevel.addParticle(ParticleTypes.LARGE_SMOKE,
+                        pPlayer.getRandomX(4.5D), pPlayer.getRandomY(), pPlayer.getRandomZ(4.5D),
+                        0.0D, 0.0D, 0.0D);
+            }
             while(!area.isEmpty()) {
                 if (area.get(0) == pPlayer) {
                     area.remove(0);
@@ -41,9 +40,6 @@ public class RadiantSwordItem extends SwordItem {
                 else {
                     hit = true;
                     float distance = area.get(0).distanceTo(pPlayer) + 1;
-                    pLevel.addParticle(ParticleTypes.EXPLOSION,area.get(0)
-                            .position().x,area.get(0).position().y, area.get(0).position().z,
-                            0,0,0 );
                     area.get(0).hurt(pPlayer.damageSources().magic(), 8 / distance);
                     area.get(0).addDeltaMovement(((
                             area.get(0).position().subtract(pPlayer.position())).normalize())

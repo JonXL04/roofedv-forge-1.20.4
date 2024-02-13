@@ -19,24 +19,23 @@ public class LightningSwordItem extends SwordItem {
     public LightningSwordItem(Tier pTier, int pAttackDamageModifier, float pAttackSpeedModifier , Properties pProperties) {
         super(pTier, pAttackDamageModifier, pAttackSpeedModifier, pProperties);
     }
+    int charges = 3;
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
         ItemStack itemstack = pPlayer.getItemInHand(pHand);
         boolean hit = false;
         if(!pLevel.isClientSide()) {
-            Vec3 attackPos = pPlayer.position().add(pPlayer.getLookAngle().multiply(5,5,5));
+            Vec3 attackPos = pPlayer.position().add(pPlayer.getLookAngle().multiply(6,6,6));
 
+            charges--;
+            pPlayer.getCooldowns().addCooldown(this, 5);
+            List<LivingEntity> area = getEntitiesInProximity(attackPos, 1.5f, pLevel);
 
-
-            List <LivingEntity> area = getEntitiesInProximity(attackPos, 1.5f, pLevel);
-            pPlayer.getCooldowns().addCooldown(this, 10);
-
-            while(!area.isEmpty()) {
+            while (!area.isEmpty()) {
                 if (area.get(0) == pPlayer) {
                     area.remove(0);
-                }
-                else {
+                } else {
                     hit = true;
                     float distance = area.get(0).distanceTo(pPlayer) + 1;
                     area.get(0).hurt(pPlayer.damageSources().magic(), 8);
@@ -51,23 +50,26 @@ public class LightningSwordItem extends SwordItem {
                     area.remove(0);
                 }
             }
-            if(hit)
-            {
+            if (hit) {
                 itemstack.hurtAndBreak(1, pPlayer, (p_41288_) -> {
                     p_41288_.broadcastBreakEvent(pHand);
                 });
                 hit = false;
             }
-
-            pPlayer.level().playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
+            pPlayer.level().playSound((Player) null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
                     SoundEvents.TRIDENT_THUNDER, SoundSource.NEUTRAL, 1F,
                     2.5F / (pPlayer.level().getRandom().nextFloat() * 0.4F + 0.8F));
+            if(charges<1) {
+                charges = 3;
+                pPlayer.getCooldowns().addCooldown(this, 100);
+            }
         }
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
     }
 
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+        pTooltipComponents.add(Component.literal("§l§3" + charges + "/3⚡"));
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.on_use.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.lightning_sword.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
