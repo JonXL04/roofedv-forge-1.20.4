@@ -1,12 +1,13 @@
 package net.jonxl04.roofedv.particle.custom;
 
 import net.minecraft.client.multiplayer.ClientLevel;
-import net.minecraft.client.particle.*;
+import net.minecraft.client.particle.Particle;
+import net.minecraft.client.particle.ParticleProvider;
+import net.minecraft.client.particle.ParticleRenderType;
+import net.minecraft.client.particle.SpriteSet;
+import net.minecraft.client.particle.TextureSheetParticle;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
-@OnlyIn(Dist.CLIENT)
 public class SlashParticle extends TextureSheetParticle {
     private final SpriteSet sprites;
 
@@ -40,21 +41,21 @@ public class SlashParticle extends TextureSheetParticle {
 
 
 
-    @Override
     public ParticleRenderType getRenderType() {
         return ParticleRenderType.PARTICLE_SHEET_LIT;
     }
 
-    @OnlyIn(Dist.CLIENT)
-    public static class Provider implements ParticleProvider<SimpleParticleType> {
-        private final SpriteSet sprites;
-
-        public Provider(SpriteSet pSprites) {
-            this.sprites = pSprites;
+    public static record Provider(SpriteSet sprites) implements ParticleProvider<SimpleParticleType> {
+        public Provider(SpriteSet sprites) {
+            this.sprites = sprites;
         }
 
-        public Particle createParticle(SimpleParticleType pType, ClientLevel pLevel, double pX, double pY, double pZ, double pXSpeed, double pYSpeed, double pZSpeed) {
-            return new SlashParticle(pLevel, pX, pY, pZ, pXSpeed, pYSpeed, pZSpeed, this.sprites);
+        public Particle createParticle(SimpleParticleType simpleParticleType, ClientLevel world, double x, double y, double z, double velX, double velY, double velZ) {
+            return new SlashParticle(world, x, y, z, velX, velY, velZ, this.sprites);
+        }
+
+        public SpriteSet sprites() {
+            return this.sprites;
         }
     }
 }
