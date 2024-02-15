@@ -41,7 +41,7 @@ public class RadiantSwordItem extends SwordItem {
                 else {
                     hit = true;
                     float distance = area.get(0).distanceTo(pPlayer) + 1;
-                    pLevel.addParticle(ParticleTypes.EXPLOSION,area.get(0)
+                    pLevel.addParticle(ParticleTypes.SMALL_FLAME,area.get(0)
                             .position().x,area.get(0).position().y, area.get(0).position().z,
                             0,0,0 );
                     area.get(0).hurt(pPlayer.damageSources().magic(), 8 / distance);

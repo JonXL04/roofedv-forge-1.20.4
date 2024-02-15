@@ -1,6 +1,7 @@
 package net.jonxl04.roofedv.entity;
 
 import net.jonxl04.roofedv.RoofedVMod;
+import net.jonxl04.roofedv.entity.custom.SlashingProjectileEntity;
 import net.jonxl04.roofedv.entity.custom.SpectatorEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -20,11 +21,7 @@ public class ModEntities {
                             .sized(0.5f,0.5f)
                             .build(new ResourceLocation(RoofedVMod.MOD_ID, "spectator").toString()));
 
-    /*public static final RegistryObject<EntityType<SlashingProjectileEntity>> SLASHING_PROJECTILE =
-            ENTITY_TYPES.register("slashing_projectile",
-                    () -> EntityType.Builder.<SlashingProjectileEntity>of(SlashingProjectileEntity::new, MobCategory.MISC)
-                            .sized(0.5f,0.5f)
-                            .build("slashing_projectile"));*/
+
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

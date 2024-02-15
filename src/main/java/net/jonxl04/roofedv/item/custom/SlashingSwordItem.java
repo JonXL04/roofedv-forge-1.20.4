@@ -4,11 +4,17 @@ import net.jonxl04.roofedv.effect.ModEffects;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.Arrow;
+import net.minecraft.world.entity.projectile.Fireball;
+import net.minecraft.world.entity.projectile.SmallFireball;
+import net.minecraft.world.entity.projectile.ThrownEnderpearl;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
@@ -22,13 +28,28 @@ public class SlashingSwordItem extends SwordItem {
     }
 
     @Override
-    public InteractionResult useOn(UseOnContext pContext) {
-        if(!pContext.getLevel().isClientSide()) {
+    public InteractionResultHolder<ItemStack> use(Level pLevel, Player pPlayer, InteractionHand pHand) {
+        ItemStack itemstack = pPlayer.getItemInHand(pHand);
+        if(!pLevel.isClientSide()) {
+            pPlayer.getCooldowns().addCooldown(this, 20);
+            SmallFireball slash = new SmallFireball(pPlayer.level(),pPlayer,
+                    pPlayer.getLookAngle().x,
+                    pPlayer.getLookAngle().y,
+                    pPlayer.getLookAngle().z);
+            //slash.setItem(itemstack);
+            slash.setPos(slash.getX(), pPlayer.getEyeY(), slash.getZ());
+            slash.shootFromRotation(pPlayer, pPlayer.getXRot(), pPlayer.getYRot(), 0.0F, 1.5F, 1.0F);
+            pLevel.addFreshEntity(slash);
 
+            itemstack.hurtAndBreak(1, pPlayer, (p_41288_) -> {
+                p_41288_.broadcastBreakEvent(pHand);
+            });
+
+            pPlayer.level().playSound((Player)null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
+                    SoundEvents.TRIDENT_THROW, SoundSource.NEUTRAL, 1F,
+                    2F / (pPlayer.level().getRandom().nextFloat() * 0.4F + 0.8F));
         }
-
-
-        return InteractionResult.SUCCESS;
+        return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());
     }
 
     @Override
