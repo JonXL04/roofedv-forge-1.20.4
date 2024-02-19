@@ -29,6 +29,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE_SLAB.get());
                         pOutput.accept(ModBlocks.SCRAP_SANDSTONE_WALL.get());
 
+                        pOutput.accept(ModBlocks.MERCHITE_LAMP.get());
+
                         pOutput.accept(ModBlocks.SCRAP_BLOCK.get());
                         pOutput.accept(ModBlocks.CUT_SCRAP.get());
                         pOutput.accept(ModBlocks.SCRAP_PLATE_BLOCK.get());
@@ -41,7 +43,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.MERCHITE_SHARD.get());
                         pOutput.accept(ModItems.MECHASTEEL_INGOT.get());
                         pOutput.accept(ModItems.MECHANICAL_SCRAP.get());
-                        pOutput.accept(ModBlocks.MERCHITE_LAMP.get());
+
+                        pOutput.accept(ModItems.COPPER_PLATE.get());
+                        pOutput.accept(ModItems.IRON_PLATE.get());
+                        pOutput.accept(ModItems.SCRAP_PLATE.get());
+                        pOutput.accept(ModItems.MECHASTEEL_PLATE.get());
 
                         pOutput.accept(ModItems.SCRAP_SWORD.get());
                         pOutput.accept(ModItems.SCRAP_PICKAXE.get());

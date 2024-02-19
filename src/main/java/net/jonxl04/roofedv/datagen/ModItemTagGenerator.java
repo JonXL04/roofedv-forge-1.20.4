@@ -2,11 +2,13 @@ package net.jonxl04.roofedv.datagen;
 
 import net.jonxl04.roofedv.RoofedVMod;
 import net.jonxl04.roofedv.item.ModItems;
+import net.jonxl04.roofedv.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
@@ -25,5 +27,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.SCRAP_CHESTPLATE.get(),
                         ModItems.SCRAP_LEGGINGS.get(),
                         ModItems.SCRAP_BOOTS.get());
+        this.tag(ModTags.Items.PLATES)
+                .add(ModItems.COPPER_PLATE.get(),
+                        ModItems.IRON_PLATE.get(),
+                        ModItems.SCRAP_PLATE.get(),
+                        ModItems.MECHASTEEL_PLATE.get()
+                );
     }
 }

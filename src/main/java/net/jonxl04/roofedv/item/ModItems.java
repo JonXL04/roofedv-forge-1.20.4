@@ -16,7 +16,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> SCRAP_INGOT = ITEMS.register("scrap_ingot",
             () -> new Item(new Item.Properties()));
-
     public static final RegistryObject<Item> SCRAP_SHARDS = ITEMS.register("scrap_shards",
             () -> new Item(new Item.Properties()));
 
@@ -31,6 +30,15 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> MECHANICAL_SCRAP = ITEMS.register("mechanical_scrap",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> SCRAP_PLATE = ITEMS.register("scrap_plate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COPPER_PLATE = ITEMS.register("copper_plate",
+            () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> MECHASTEEL_PLATE = ITEMS.register("mechasteel_plate",
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SCRAP_SWORD = ITEMS.register("scrap_sword",

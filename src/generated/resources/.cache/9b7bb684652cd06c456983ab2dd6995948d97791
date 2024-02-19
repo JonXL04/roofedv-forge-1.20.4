@@ -1,9 +1,12 @@
-// 1.20.4	2024-02-04T15:56:49.8304461	Item Models: roofedv
+// 1.20.4	2024-02-19T16:48:57.615193	Item Models: roofedv
+6a5768f4dc4d9199e292ab0391857ada88ea3689 assets/roofedv/models/item/copper_plate.json
+48fbdf898feed6b1b9b810ee21d0e50f89bac942 assets/roofedv/models/item/iron_plate.json
 69b67ff30bae5130f428e7a54694f59d77da1fa5 assets/roofedv/models/item/mechanical_scrap.json
 1de3e2701808b8daa72d8acde9531018030d4d26 assets/roofedv/models/item/mechasteel_axe.json
 4e3bf09f18a6cdf446ff5ea84278ec94257dc9ec assets/roofedv/models/item/mechasteel_hoe.json
 53e10067456508c7e96c0f89e322968c33b86201 assets/roofedv/models/item/mechasteel_ingot.json
 5561d7c3c32aa3ee350c8df77684c99ff001846e assets/roofedv/models/item/mechasteel_pickaxe.json
+992998b2760acebfaabb2efe60b90c39ffc2d667 assets/roofedv/models/item/mechasteel_plate.json
 7e0a85c807a8fa14c35a6178e2440f86ff505133 assets/roofedv/models/item/mechasteel_shovel.json
 1210751404040d4e9e1892e35e37925c85e11890 assets/roofedv/models/item/mechasteel_sword.json
 3efc13af30b305ac933c9c7018571e6774a3d253 assets/roofedv/models/item/merchite.json
@@ -57,6 +60,7 @@ ba7fe221ea096d7b57e82d64e0153fe76799011a assets/roofedv/models/item/scrap_leggin
 c3b380ff765df7a8fe93724ccce11aefcd52f178 assets/roofedv/models/item/scrap_leggings_quartz_trim.json
 dec7dfb95eed4527fa50d50e5c02852225f3f09f assets/roofedv/models/item/scrap_leggings_redstone_trim.json
 a3e0447fa47d77989f292c02e20a2bf580713b55 assets/roofedv/models/item/scrap_pickaxe.json
+de236d605c1111d62bd6b153bd951df69b02f28d assets/roofedv/models/item/scrap_plate.json
 1a487d3b5a1374e5a9747a6516884e32a0498d5e assets/roofedv/models/item/scrap_sandstone_slab.json
 3f920cca5aed7f4fe0a9a6d8610595b918d2760d assets/roofedv/models/item/scrap_sandstone_stairs.json
 4f8ccbb3c0b248c1e67701e6738519e35e0375f2 assets/roofedv/models/item/scrap_sandstone_wall.json

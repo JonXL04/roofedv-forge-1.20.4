@@ -63,6 +63,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.MECHASTEEL_SHOVEL, "handheld");
         simpleItem(ModItems.MECHASTEEL_AXE, "handheld");
         simpleItem(ModItems.MECHASTEEL_HOE, "handheld");
+        simpleItem(ModItems.SCRAP_PLATE, "generated");
+        simpleItem(ModItems.IRON_PLATE, "generated");
+        simpleItem(ModItems.COPPER_PLATE, "generated");
+        simpleItem(ModItems.MECHASTEEL_PLATE, "generated");
 
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_STAIRS);
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_SLAB);

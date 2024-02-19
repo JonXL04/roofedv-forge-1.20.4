@@ -19,6 +19,7 @@ public class ModTags {
 
     public static class Items {
         public static final TagKey<Item> METAL_SCRAPS = tag("metal_scrap_items");
+        public static final TagKey<Item> PLATES = tag("plates");
 
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(RoofedVMod.MOD_ID,name));
