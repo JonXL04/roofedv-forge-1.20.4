@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 4,
+  "ingredient": {
+    "item": "roofedv:scrap_block"
+  },
+  "result": "roofedv:scrap_plate"
+}
