@@ -1,11 +1,14 @@
 package net.jonxl04.roofedv.item.custom;
 
+import net.jonxl04.roofedv.particle.ModParticle;
+import net.minecraft.client.particle.Particle;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.MoverType;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
@@ -56,9 +59,26 @@ public class LightningSwordItem extends SwordItem {
                 });
                 hit = false;
             }
-            pPlayer.level().playSound((Player) null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(),
-                    SoundEvents.TRIDENT_THUNDER, SoundSource.NEUTRAL, 1F,
+            /*
+            pPlayer.addDeltaMovement(new Vec3(
+                    0,
+                    -pPlayer.getDeltaMovement().y,
+                    0));
+            pPlayer.resetFallDistance();
+            */
+
+            pPlayer.level().playSound(null, attackPos.x, attackPos.y, attackPos.z,
+                    SoundEvents.TRIDENT_THUNDER, SoundSource.NEUTRAL, 0.5F,
                     2.5F / (pPlayer.level().getRandom().nextFloat() * 0.4F + 0.8F));
+
+            for (int i=5; i<0; i--){
+            pLevel.addParticle(ModParticle.SLASH_PARTICLE.get(),
+                    attackPos.x,
+                    attackPos.y,
+                    attackPos.z,
+                    0, 0, 0);
+            }
+
             if(charges<1) {
                 charges = 3;
                 pPlayer.getCooldowns().addCooldown(this, 100);

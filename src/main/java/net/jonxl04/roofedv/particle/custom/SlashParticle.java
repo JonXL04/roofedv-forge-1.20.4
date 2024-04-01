@@ -10,6 +10,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 
 public class SlashParticle extends TextureSheetParticle {
     private final SpriteSet sprites;
+    private float rotation;
 
     protected SlashParticle(ClientLevel pLevel, double pX, double pY, double pZ, double pXSpeed, double pYSpeed, double pZSpeed, SpriteSet pSprites) {
         super(pLevel, pX, pY, pZ, pXSpeed, pYSpeed, pZSpeed);
@@ -19,8 +20,10 @@ public class SlashParticle extends TextureSheetParticle {
         this.xd *= pXSpeed * 0D;
         this.yd *= pYSpeed * 0D;
         this.zd *= pZSpeed * 0D;
-        this.quadSize *= 0.85f;
-        this.lifetime = 20;
+        this.quadSize *= 8.0f;
+        this.lifetime = 6;
+        this.rotation = (float)Math.toRadians(this.random.nextInt(0,360));
+        this.roll = this.rotation;
         this.setSpriteFromAge(pSprites);
 
         this.rCol = 1f;
@@ -32,6 +35,7 @@ public class SlashParticle extends TextureSheetParticle {
         this.xo = this.x;
         this.yo = this.y;
         this.zo = this.z;
+        this.roll = 0;
         if (this.age++ >= this.lifetime) {
             this.remove();
         } else {

@@ -2,15 +2,12 @@ package net.jonxl04.roofedv.worldgen.biome;
 
 import net.jonxl04.roofedv.RoofedVMod;
 import net.jonxl04.roofedv.entity.ModEntities;
-import net.jonxl04.roofedv.worldgen.ModPlacedFeatures;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.Musics;
-import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.levelgen.GenerationStep;
@@ -64,9 +61,9 @@ public class ModBiomes {
                 .generationSettings(biomeBuilder.build())
                 .mobSpawnSettings(spawnBuilder.build())
                 .specialEffects((new BiomeSpecialEffects.Builder())
-                        //.waterColor(0xe82e3b)
-                        //.waterFogColor(0xbf1b26)
-                        //.skyColor(0x30c918)
+                        .waterColor(0xe82e3b)
+                        .waterFogColor(0xbf1b26)
+                        .skyColor(0x30c918)
                         .grassColorOverride(0x7f03fc)
                         .foliageColorOverride(0xd203fc)
                         .fogColor(0x22a1e6)
