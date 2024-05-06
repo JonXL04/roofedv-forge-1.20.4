@@ -66,7 +66,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> MERCHITE_LAMP = registerBlock("merchite_lamp",
             () -> new Block(BlockBehaviour.Properties.ofFullCopy(ModBlocks.SCRAP_BLOCK.get())));
 
-
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

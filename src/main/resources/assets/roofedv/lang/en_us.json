@@ -26,6 +26,8 @@
   "item.roofedv.lightning_saberblade": "§bLightning Saber Blade",
   "item.roofedv.quantum_saberblade": "§9Quantum Saber Blade",
   "item.roofedv.radiant_saberblade": "§eRadiant Saber Blade",
+  "item.roofedv.taser_blade": "§6Taser Blade",
+  "item.roofedv.basic_energy_shield": "§3Energy Shield",
   "item.roofedv.scrap_plate": "Scrap plate",
   "item.roofedv.iron_plate": "Iron plate",
   "item.roofedv.copper_plate": "Copper plate",
@@ -57,6 +59,8 @@
   "tooltip.roofedv.shifting_sword.tooltip": " §2Teleports the wielder through the target",
   "tooltip.roofedv.leaching_sword.tooltip": " §2Recovers health equivalent to a percentage of the damage dealt",
   "tooltip.roofedv.quantum_sword.tooltip": " §2Affects the target with Quantum Entanglement",
+  "tooltip.roofedv.taser_sword.tooltip": " §2+1 Lightning damage",
+
 
   "tooltip.roofedv.on_use.tooltip": "§7When used:",
   "tooltip.roofedv.slashing_sword.tooltip": " §2Throws a slash projectile",

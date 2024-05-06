@@ -54,6 +54,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SCRAP_SHOVEL.get());
                         pOutput.accept(ModItems.SCRAP_AXE.get());
                         pOutput.accept(ModItems.SCRAP_HOE.get());
+                        pOutput.accept(ModItems.TASER_BLADE.get());
                         pOutput.accept(ModItems.MECHASTEEL_SWORD.get());
                         pOutput.accept(ModItems.MECHASTEEL_PICKAXE.get());
                         pOutput.accept(ModItems.MECHASTEEL_SHOVEL.get());
@@ -65,6 +66,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.LIGHTNING_SABERBLADE.get());
                         pOutput.accept(ModItems.QUANTUM_SABERBLADE.get());
                         pOutput.accept(ModItems.RADIANT_SABERBLADE.get());
+                        pOutput.accept(ModItems.BASIC_ENERGY_SHIELD.get());
                         pOutput.accept(ModItems.SCRAP_HELMET.get());
                         pOutput.accept(ModItems.SCRAP_CHESTPLATE.get());
                         pOutput.accept(ModItems.SCRAP_LEGGINGS.get());
