@@ -38,6 +38,6 @@ public class TaserSwordItem extends SwordItem {
 
     @Override
     public Rarity getRarity(ItemStack pStack) {
-        return Rarity.EPIC;
+        return Rarity.RARE;
     }
 }

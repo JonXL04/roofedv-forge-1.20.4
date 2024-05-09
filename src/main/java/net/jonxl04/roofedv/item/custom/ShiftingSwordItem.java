@@ -1,11 +1,14 @@
 package net.jonxl04.roofedv.item.custom;
 
+import net.jonxl04.roofedv.particle.ModParticle;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.*;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
@@ -37,9 +40,12 @@ public class ShiftingSwordItem extends SwordItem {
                 true);
         pAttacker.lookAt(EntityAnchorArgument.Anchor.FEET, new Vec3(pTarget.getX(),pTarget.getY(), pTarget.getZ()));
         pAttacker.resetFallDistance();
+        pAttacker.hurtMarked = true;
         pAttacker.setDeltaMovement(oldMov);
-        MobEffects.BLINDNESS.applyEffectTick(pTarget,0);
-
+        pTarget.addEffect(new MobEffectInstance(MobEffects.BLINDNESS,5));
+        pAttacker.level().addParticle(ModParticle.SLASH_PARTICLE.get(),
+                pTarget.getX(), pTarget.getY(), pTarget.getZ(),
+                0.0D, 0.0D, 0.0D);
         pAttacker.level().playSound((Player)null, pAttacker.getX(), pAttacker.getY(), pAttacker.getZ(),
                 SoundEvents.PLAYER_TELEPORT, SoundSource.NEUTRAL, 1F,
                 0.8F / (pAttacker.level().getRandom().nextFloat() * 0.4F + 0.8F));
