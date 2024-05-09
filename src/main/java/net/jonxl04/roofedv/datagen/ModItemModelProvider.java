@@ -67,6 +67,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.IRON_PLATE, "generated");
         simpleItem(ModItems.COPPER_PLATE, "generated");
         simpleItem(ModItems.MECHASTEEL_PLATE, "generated");
+        simpleItem(ModItems.JET_BOOSTER, "generated");
 
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_STAIRS);
         simplerBlockItem(ModBlocks.SCRAP_SANDSTONE_SLAB);

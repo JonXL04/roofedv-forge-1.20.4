@@ -28,7 +28,7 @@ public class EnergyShieldItem extends ShieldItem {
         int charge = 0;
         if(!pLevel.isClientSide()) {
             List <LivingEntity> area = getEntitiesInProximity(pPlayer, 4.5f, pLevel);
-            pPlayer.getCooldowns().addCooldown(this, 100);
+            //pPlayer.getCooldowns().addCooldown(this, 100);
             for(int i = 0; i < 20; ++i) {
                 pLevel.addParticle(ParticleTypes.LARGE_SMOKE,
                         pPlayer.getRandomX(4.5D), pPlayer.getRandomY(), pPlayer.getRandomZ(4.5D),

@@ -51,6 +51,8 @@ public class ModItems {
     public static final RegistryObject<Item> SCRAP_HOE = ITEMS.register("scrap_hoe",
             () -> new HoeItem(ModToolTiers.SCRAP, -2, -1.5f, new Item.Properties()));
 
+    public static final RegistryObject<Item> JET_BOOSTER = ITEMS.register("jet_booster",
+            () -> new JetBoosterItem(new Item.Properties()));
     public static final RegistryObject<Item> BASIC_ENERGY_SHIELD = ITEMS.register("basic_energy_shield",
             () -> new EnergyShieldItem(new Item.Properties(),1.0f));
     public static final RegistryObject<Item> TASER_BLADE = ITEMS.register("taser_blade",

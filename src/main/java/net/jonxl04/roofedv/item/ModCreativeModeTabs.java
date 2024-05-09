@@ -66,6 +66,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.LIGHTNING_SABERBLADE.get());
                         pOutput.accept(ModItems.QUANTUM_SABERBLADE.get());
                         pOutput.accept(ModItems.RADIANT_SABERBLADE.get());
+                        pOutput.accept(ModItems.JET_BOOSTER.get());
                         pOutput.accept(ModItems.BASIC_ENERGY_SHIELD.get());
                         pOutput.accept(ModItems.SCRAP_HELMET.get());
                         pOutput.accept(ModItems.SCRAP_CHESTPLATE.get());

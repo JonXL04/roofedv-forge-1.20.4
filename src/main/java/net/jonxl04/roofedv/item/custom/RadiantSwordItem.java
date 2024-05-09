@@ -29,7 +29,7 @@ public class RadiantSwordItem extends SwordItem {
             List <LivingEntity> area = getEntitiesInProximity(pPlayer, 4.5f, pLevel);
             pPlayer.getCooldowns().addCooldown(this, 100);
             for(int i = 0; i < 20; ++i) {
-                pLevel.addParticle(ParticleTypes.LARGE_SMOKE,
+                pLevel.addParticle(ParticleTypes.CAMPFIRE_SIGNAL_SMOKE,
                         pPlayer.getRandomX(4.5D), pPlayer.getRandomY(), pPlayer.getRandomZ(4.5D),
                         0.0D, 0.0D, 0.0D);
             }
