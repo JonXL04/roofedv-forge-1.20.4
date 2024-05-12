@@ -12,7 +12,6 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -68,7 +67,7 @@ public class RadiantSwordItem extends SwordItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+    public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.on_use.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.radiant_sword.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);

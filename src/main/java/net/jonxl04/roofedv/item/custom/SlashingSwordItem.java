@@ -9,7 +9,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.SmallFireball;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -44,7 +43,7 @@ public class SlashingSwordItem extends SwordItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+    public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.on_use.tooltip"));
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.slashing_sword.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);

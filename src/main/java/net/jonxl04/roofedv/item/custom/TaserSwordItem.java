@@ -8,7 +8,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
@@ -31,7 +30,7 @@ public class TaserSwordItem extends SwordItem {
     }
 
     @Override
-    public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
+    public void appendHoverText(ItemStack pStack, Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.roofedv.taser_sword.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
     }
